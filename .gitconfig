@@ -1,0 +1,30 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Kubilay Erdogan
+	email = 1839554+kublaios@users.noreply.github.com
+[core]
+	excludesfile = /Users/kubilay/.gitignore_global
+	attributesfile = ~/.gitattributes
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/kubilay/.stCommitMsg
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+#[url "git@github.com:"]
+# 	insteadOf = https://github.com/
+[alias]
+	diff-image = "!f() { cd -- \"${GIT_PREFIX:-.}\"; GIT_DIFF_IMAGE_ENABLED=1 git diff \"$@\"; }; f"
+[diff "image"]
+	command = ~/Desktop/git-diff-image/git_diff_image
+[init]
+	defaultBranch = develop
