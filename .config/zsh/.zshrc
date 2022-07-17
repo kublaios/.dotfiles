@@ -81,3 +81,7 @@ autoload edit-command-line; zle -N edit-command-line
 # (optional) change to ctrl-e
 # bindkey '^e' edit-command-line
 
+bindkey '^[[Z' complete-word # shift-tab
+bindkey '^ ' complete-word # ctrl-space
+bindkey '^I' autosuggest-accept # tab
+
