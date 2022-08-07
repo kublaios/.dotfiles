@@ -31,6 +31,9 @@ alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 alt - t : yabai -m window --toggle float;\
           yabai -m window --grid 4:4:1:1:2:2
 
+# whether the focused window should be shown on all spaces
+shift + alt - t : yabai -m window --toggle sticky
+
 # toggle window split type
 alt - e : yabai -m window --toggle split
 
