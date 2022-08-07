@@ -1,2 +1,4 @@
 
 .config/zsh/.zsh_sessions
+.config/zsh/.zcompcache
+.config/nvim/plugin/packer_compiled.lua

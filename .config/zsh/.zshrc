@@ -85,3 +85,4 @@ bindkey '^[[Z' complete-word # shift-tab
 bindkey '^ ' complete-word # ctrl-space
 bindkey '^I' autosuggest-accept # tab
 
+eval "$(rbenv init -)"
