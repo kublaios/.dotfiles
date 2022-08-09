@@ -17,4 +17,6 @@ nnoremap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
 
 nnoremap <leader>q :q<CR>
 nnoremap <leader>Q :q!<CR>
+
+vnoremap <leader>y "*y<CR>
 ]])
