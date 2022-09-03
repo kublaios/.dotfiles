@@ -86,8 +86,6 @@ brew "libcaca"
 brew "libksba"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Read-write NTFS driver for FUSE
-brew "ntfs-3g"
 # Manage multiple Node.js versions
 brew "nvm"
 # Cross-platform application and UI framework
@@ -130,8 +128,6 @@ brew "lokalise/cli-2/lokalise2"
 brew "mono0926/license-plist/license-plist"
 # Utility for customizing which browser to start
 cask "finicky"
-# Re-mounts write-protected NTFS volumes
-cask "mounty"
 cask "pusher"
 # QuickLook generator for Markdown files
 cask "qlmarkdown"
@@ -142,3 +138,9 @@ cask "tableplus"
 cask "temurin"
 # Install and switch between multiple versions of Xcode
 cask "xcodes"
+
+# Disabled
+# Re-mounts write-protected NTFS volumes
+# cask "mounty"
+# Read-write NTFS driver for FUSE
+# brew "ntfs-3g"
