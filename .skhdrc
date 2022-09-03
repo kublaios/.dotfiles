@@ -25,7 +25,8 @@ alt - r : yabai -m space --rotate 90
 alt - f : yabai -m window --toggle zoom-fullscreen
 
 # toggle padding and gap
-alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
+# TODO: find an alternative because this shortcut is for accent character ğ
+# alt - g : yabai -m space --toggle padding; yabai -m space --toggle gap
 
 # float / unfloat window and center on screen
 alt - t : yabai -m window --toggle float;\
