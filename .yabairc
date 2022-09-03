@@ -41,28 +41,63 @@ yabai -m config right_padding                15
 yabai -m config window_gap                   15
 
 # apps to not manage (ignore)
-yabai -m rule --add app="^Preferences$" manage=off
-yabai -m rule --add app="^Archive Utility$" manage=off
+# system apps
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^App Store$" manage=off
+yabai -m rule --add title="Software Update" manage=off
+
+yabai -m rule --add app="^System Preferences$" title=".*" manage=off
+yabai -m rule --add app="^Preview$" manage=off
 yabai -m rule --add app="^Stickies$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
+yabai -m rule --add app="^Archive Utility$" manage=off
+yabai -m rule --add app="^Keychain Access$" manage=off
+yabai -m rule --add app="^Find My$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Dictionary$" manage=off
+yabai -m rule --add app="System Information" manage=off
+yabai -m rule --add app="^Notes$" manage=off
+# https://github.com/koekeishiya/yabai/issues/1125
+yabai -m rule --add app="^System.*einstellungen$" title=".*" manage=off
+yabai -m rule --add app="^Vorschau$" manage=off
 yabai -m rule --add app="^Notizzettel$" manage=off
+yabai -m rule --add app="^Aktivitätsanzeige$" manage=off
+yabai -m rule --add app="^Archivierungsprogramm$" manage=off
+yabai -m rule --add app="^Schlüsselbund.*verwaltung$" manage=off
+yabai -m rule --add app="^Wo ist\?$" manage=off
+yabai -m rule --add app="^Rechner$" manage=off
+yabai -m rule --add app="^Lexikon$" manage=off
+yabai -m rule --add app="System.*informationen" manage=off
+yabai -m rule --add app="^Notizen$" manage=off
+
+yabai -m rule --add app="^Preferences$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^Karabiner-EventViewer$" manage=off
 yabai -m rule --add app="^Creative Cloud$" manage=off
 yabai -m rule --add app="^Telegram$" manage=off
 yabai -m rule --add app="^NordVPN$" manage=off
-yabai -m rule --add app="^Keychain$" manage=off
-yabai -m rule --add app="^Schlüsselbundverwaltung$" manage=off
-yabai -m rule --add app="^Karabiner$" manage=off
-yabai -m rule --add app="^Wo ist$" manage=off
-yabai -m rule --add app="^Find My$" manage=off
+yabai -m rule --add app="^Proxyman$" manage=off
+yabai -m rule --add app="^Perimeter 81$" manage=off
+yabai -m rule --add app="^QLMarkdown$" manage=off
+yabai -m rule --add app="^AirBuddy$" manage=off
+yabai -m rule --add app="^TeamViewer$" manage=off
+yabai -m rule --add app="^Uberlayer$" manage=off
+yabai -m rule --add app="^Microsoft To Do$" manage=off
+yabai -m rule --add app="^Skype$" manage=off
+yabai -m rule --add app="^Asset Catalog Creator Pro$" manage=off
+yabai -m rule --add app="^DeepL$" manage=off
+yabai -m rule --add app="^GPG Keychain$" manage=off
+yabai -m rule --add app="^zoom.us$" manage=off
+yabai -m rule --add app="^Drafts$" manage=off
+yabai -m rule --add app="^LottieFiles$" manage=off
+yabai -m rule --add app="^Erinnerungen$" manage=off
+yabai -m rule --add app="^Kalender$" manage=off
+yabai -m rule --add app="^FaceTime$" manage=off
+yabai -m rule --add app="^Nachrichten$" manage=off
+yabai -m rule --add app="^Podcasts$" manage=off
+yabai -m rule --add app="^Sprachmemos$" manage=off
+yabai -m rule --add app="^Installationsprogramm$" manage=off
 yabai -m rule --add app="^Simulator$" manage=off
-
-yabai -m rule --add label="Finder" app="^Finder$" manage=off
-yabai -m rule --add label="System Preferences" app="^System Preferences$" title=".*" manage=off
-yabai -m rule --add label="Systemeinstellungen" app="^Systemeinstellungen$" title=".*" manage=off
-yabai -m rule --add label="App Store" app="^App Store$" manage=off
-yabai -m rule --add label="Activity Monitor" app="^Activity Monitor$" manage=off
-yabai -m rule --add label="Calculator" app="^Calculator$" manage=off
-yabai -m rule --add label="Dictionary" app="^Dictionary$" manage=off
-yabai -m rule --add label="Software Update" title="Software Update" manage=off
-yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
+yabai -m rule --add app="^Xcodes$" manage=off
 
 echo "~~yabai configuration loaded~~"
