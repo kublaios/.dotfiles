@@ -4,7 +4,7 @@
 	name = Kubilay Erdogan
 	email = 1839554+kublaios@users.noreply.github.com
 [core]
-	excludesfile = ~/.gitignore_global
+	excludesfile = ~/.dotfiles/.gitignore_global
 	attributesfile = ~/.gitattributes
 [commit]
 	template = ~/.stCommitMsg
