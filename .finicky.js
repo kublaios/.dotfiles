@@ -3,6 +3,9 @@
 
 module.exports = {
   defaultBrowser: "Firefox",      
+  options: {
+    hideIcon: true
+  },
   handlers: [
     {
       match: /^https?:\/\/meet\.google\.com\/.*$/,
