@@ -101,5 +101,7 @@ yabai -m rule --add app="^Sprachmemos$" manage=off
 yabai -m rule --add app="^Installationsprogramm$" manage=off
 yabai -m rule --add app="^Simulator$" manage=off
 yabai -m rule --add app="^Xcodes$" manage=off
+yabai -m rule --add app="^JetBrains Toolbox$" manage=off
+yabai -m rule --add app="^Tureng$" manage=off
 
 echo "~~yabai configuration loaded~~"
