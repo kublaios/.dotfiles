@@ -47,6 +47,7 @@ yabai -m rule --add app="^App Store$" manage=off
 yabai -m rule --add title="Software Update" manage=off
 
 yabai -m rule --add app="^System Preferences$" title=".*" manage=off
+yabai -m rule --add app="^System Settings$" title=".*" manage=off
 yabai -m rule --add app="^Preview$" manage=off
 yabai -m rule --add app="^Stickies$" manage=off
 yabai -m rule --add app="^Activity Monitor$" manage=off
