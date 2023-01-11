@@ -104,5 +104,7 @@ yabai -m rule --add app="^Simulator$" manage=off
 yabai -m rule --add app="^Xcodes$" manage=off
 yabai -m rule --add app="^JetBrains Toolbox$" manage=off
 yabai -m rule --add app="^Tureng$" manage=off
+yabai -m rule --add app="^Anka$" manage=off
+yabai -m rule --add app="^iCUE$" manage=off
 
 echo "~~yabai configuration loaded~~"
