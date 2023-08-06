@@ -1,4 +1,3 @@
-tap "helix-editor/helix"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
@@ -8,12 +7,8 @@ tap "koekeishiya/formulae"
 tap "kylef/formulae"
 tap "lokalise/cli-2"
 tap "mono0926/license-plist"
-tap "teamookla/speedtest"
-tap "vapor/tap"
 # Tool for generating GNU Standards-compliant Makefiles
 brew "automake"
-# Clone of cat(1) with syntax highlighting and Git integration
-brew "bat"
 # Platform built on V8 to build network applications
 brew "node", link: false
 # Package manager for the web
@@ -24,8 +19,6 @@ brew "python@3.9"
 brew "glib"
 # Manage compile and link flags for libraries
 brew "pkg-config"
-# Dependency manager for Cocoa projects
-brew "cocoapods", link: false
 # C library implementing the SSH2 protocol
 brew "libssh2"
 # Libraries to talk to Microsoft SQL Server and Sybase databases
@@ -94,8 +87,6 @@ brew "qt@5", link: true
 brew "ruby-build"
 # Ruby version manager
 brew "rbenv"
-# Powerful, clean, object-oriented scripting language
-brew "ruby@2.5"
 # Tool to enforce Swift style and conventions
 brew "swiftlint"
 # User interface to the TELNET protocol
@@ -104,10 +95,6 @@ brew "telnet"
 brew "tree"
 # Extract, view, and test RAR archives
 brew "unrar"
-# Command-line tool for Vapor (Server-side Swift web framework)
-brew "vapor"
-# Vi 'workalike' with many additional features
-brew "vim"
 # Internet file retriever
 brew "wget"
 # Drop-in replacement for xcodebuild with a few extra features
@@ -126,21 +113,21 @@ brew "koekeishiya/formulae/yabai"
 brew "lokalise/cli-2/lokalise2"
 # A license list generator of all your dependencies for iOS applications
 brew "mono0926/license-plist/license-plist"
-# Utility for customizing which browser to start
-cask "finicky"
-cask "pusher"
 # QuickLook generator for Markdown files
-cask "qlmarkdown"
 cask "quicklook-json"
-# Native GUI tool for relational databases
-cask "tableplus"
 # JDK from the Eclipse Foundation (Adoptium)
 cask "temurin"
 # Install and switch between multiple versions of Xcode
 cask "xcodes"
-
-# Disabled
+# NTFS support
 # Re-mounts write-protected NTFS volumes
-# cask "mounty"
-# Read-write NTFS driver for FUSE
-# brew "ntfs-3g"
+# Currently fails, figure out why!
+# brew "gromgit/fuse/mounty"
+# brew "ntfs-3g-mac"
+brew "monolith"
+cask "eqmac"
+cask "copilot-for-xcode"
+# Daemon for supporting spotify-tui
+brew "spotifyd"
+brew "portaudio"
+brew "spotify-tui"

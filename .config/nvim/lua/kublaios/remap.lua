@@ -1,5 +1,7 @@
 local nnoremap = require("kublaios.keymap").nnoremap
+local xnoremap = require("kublaios.keymap").xnoremap
 nnoremap("<leader>pv", "<cmd>Ex<CR>")
+xnoremap("<leader>p", "\"_dP")
 
 vim.cmd([[
 nnoremap <leader>h :wincmd h<CR>

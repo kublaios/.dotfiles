@@ -7,3 +7,4 @@ export NVM_DIR="$HOME/.nvm"
 
 # Throws error, thus disabled
 # [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+. "$HOME/.cargo/env"

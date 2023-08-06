@@ -70,6 +70,9 @@ yabai -m rule --add app="^Rechner$" manage=off
 yabai -m rule --add app="^Lexikon$" manage=off
 yabai -m rule --add app="System.*informationen" manage=off
 yabai -m rule --add app="^Notizen$" manage=off
+yabai -m rule --add app="^QuickTime Player$" manage=off
+yabai -m rule --add app="^Home$" manage=off
+yabai -m rule --add app="^TestFlight$" manage=off
 
 yabai -m rule --add app="^Preferences$" manage=off
 yabai -m rule --add app="^Softwareupdate$" manage=off
@@ -106,5 +109,13 @@ yabai -m rule --add app="^JetBrains Toolbox$" manage=off
 yabai -m rule --add app="^Tureng$" manage=off
 yabai -m rule --add app="^Anka$" manage=off
 yabai -m rule --add app="^iCUE$" manage=off
+yabai -m rule --add app="^Logitech G HUB$" manage=off
+yabai -m rule --add app="^Logi Options.*$" manage=off
+yabai -m rule --add app="^Sketch$" manage=off
+yabai -m rule --add app="^Bearly$" manage=off
+yabai -m rule --add app="^Stats$" manage=off
+yabai -m rule --add app="^eqMac$" manage=off
+yabai -m rule --add app="^Copilot for Xcode$" manage=off
+yabai -m rule --add app="^Copilot.*$" manage=off
 
 echo "~~yabai configuration loaded~~"

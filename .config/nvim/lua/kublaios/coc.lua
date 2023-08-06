@@ -15,7 +15,7 @@ set signcolumn=yes
 " NOTE: Use command ':verbose imap <Right>' to make sure the key is not mapped by
 " other plugin before putting this into your config.
 inoremap <silent><expr> <Right>
-      \ coc#pum#visible() ? coc#pum#confirm():
+      \ coc#pum#visible() ? coc#pum#confirm() :
       \ CheckBackspace() ? "\<Right>" :
       \ coc#refresh()
 inoremap <expr><Left> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"

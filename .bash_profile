@@ -8,3 +8,4 @@ eval "$(rbenv init -)"
 compresspdf() {
     gs -sDEVICE=pdfwrite -dNOPAUSE -dQUIET -dBATCH -dPDFSETTINGS=/${3:-"screen"} -dCompatibilityLevel=1.7 -sOutputFile="$2" "$1"
 }
+. "$HOME/.cargo/env"

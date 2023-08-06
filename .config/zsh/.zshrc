@@ -86,3 +86,8 @@ bindkey '^ ' complete-word # ctrl-space
 bindkey '^I' autosuggest-accept # tab
 
 eval "$(rbenv init -)"
+
+export TOTP_CONFIG=$HOME/Dropbox/keys-settings/.totp-config.json
+
+# Copilot for CLI
+eval "$(github-copilot-cli alias -- "$0")"
