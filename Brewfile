@@ -125,9 +125,7 @@ cask "xcodes"
 # brew "gromgit/fuse/mounty"
 # brew "ntfs-3g-mac"
 brew "monolith"
-cask "eqmac"
 cask "copilot-for-xcode"
-# Daemon for supporting spotify-tui
-brew "spotifyd"
-brew "portaudio"
-brew "spotify-tui"
+# Prevent Music app from starting
+cask "notunes"
+cask "docker"
