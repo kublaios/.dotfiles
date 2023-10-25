@@ -128,4 +128,3 @@ brew "monolith"
 cask "copilot-for-xcode"
 # Prevent Music app from starting
 cask "notunes"
-cask "docker"
