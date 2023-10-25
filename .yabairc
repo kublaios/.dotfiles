@@ -74,6 +74,7 @@ yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^Home$" manage=off
 yabai -m rule --add app="^TestFlight$" manage=off
 
+yabai -m rule --add app="^Terminal$" manage=off
 yabai -m rule --add app="^Preferences$" manage=off
 yabai -m rule --add app="^Softwareupdate$" manage=off
 yabai -m rule --add app="^Raycast$" manage=off
@@ -117,5 +118,7 @@ yabai -m rule --add app="^Stats$" manage=off
 yabai -m rule --add app="^eqMac$" manage=off
 yabai -m rule --add app="^Copilot for Xcode$" manage=off
 yabai -m rule --add app="^Copilot.*$" manage=off
+yabai -m rule --add app="^Docker.*$" manage=off
+yabai -m rule --add app="^WhatsApp.*$" manage=off
 
 echo "~~yabai configuration loaded~~"
