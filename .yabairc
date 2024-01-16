@@ -120,5 +120,7 @@ yabai -m rule --add app="^Copilot for Xcode$" manage=off
 yabai -m rule --add app="^Copilot.*$" manage=off
 yabai -m rule --add app="^Docker.*$" manage=off
 yabai -m rule --add app="^WhatsApp.*$" manage=off
+yabai -m rule --add app="^PS Remote Play.*$" manage=off
+yabai -m rule --add app="^NVIDIA GeForce NOW.*$" manage=off
 
 echo "~~yabai configuration loaded~~"
