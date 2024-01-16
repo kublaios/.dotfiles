@@ -3,24 +3,15 @@
 # Please adapt and uncomment the following lines:
 	name = Kubilay Erdogan
 	email = 1839554+kublaios@users.noreply.github.com
+	signingkey = 93A076B30F4CEAA4
 [core]
-	excludesfile = ~/.dotfiles/.gitignore_global
+	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
 [commit]
-	template = ~/.stCommitMsg
+#	template = ~/.commitMsg
 	gpgsign = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
-#[url "git@github.com:"]
-# 	insteadOf = https://github.com/
-[init]
-	defaultBranch = develop
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
