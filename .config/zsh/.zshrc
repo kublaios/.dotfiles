@@ -85,9 +85,12 @@ bindkey '^[[Z' complete-word # shift-tab
 bindkey '^ ' complete-word # ctrl-space
 bindkey '^I' autosuggest-accept # tab
 
-eval "$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 
 export TOTP_CONFIG=$HOME/Dropbox/keys-settings/.totp-config.json
 
 # Copilot for CLI
 eval "$(github-copilot-cli alias -- "$0")"
+
+# JDK
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"
