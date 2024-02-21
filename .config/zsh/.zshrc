@@ -5,9 +5,6 @@ HISTFILE=~/.zsh_history
 setopt appendhistory
 setopt nomatch 
 
-# TODO make the following dynamic
-export FZFDIR=/usr/local/Cellar/fzf/0.30.0/shell/
-
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
 setopt interactive_comments
@@ -54,7 +51,6 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # bindkey -s '^o' 'ranger^M'
 # bindkey -s '^f' 'zi^M'
 # bindkey -s '^s' 'ncdu^M'
-# bindkey -s '^n' 'nvim $(fzf)^M'
 # bindkey -s '^v' 'nvim\n'
 # bindkey -s '^z' 'zi^M'
 # bindkey '^[[P' delete-char
@@ -69,9 +65,6 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # TODO update for mac
 [ -f $FZFDIR/completion.zsh ] && source $FZFDIR/completion.zsh
 [ -f $FZFDIR/key-bindings.zsh ] && source $FZFDIR/key-bindings.zsh
-#[ -f /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh
-#[ -f /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # export FZF_DEFAULT_COMMAND='rg --hidden -l ""'
 autoload -U compinit
 compinit
