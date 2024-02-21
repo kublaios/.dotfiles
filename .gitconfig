@@ -7,8 +7,6 @@
 [core]
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
-[commit]
-#	template = ~/.commitMsg
 	gpgsign = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
