@@ -3,7 +3,7 @@
 # Please adapt and uncomment the following lines:
 	name = Kubilay Erdogan
 	email = 1839554+kublaios@users.noreply.github.com
-	signingkey = 93A076B30F4CEAA4
+	signingkey = 55D41FEE4CC8FD2E
 [core]
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
@@ -13,3 +13,5 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[commit]
+	gpgsign = true
