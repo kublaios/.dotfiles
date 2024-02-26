@@ -67,7 +67,7 @@ zsh_add_plugin "hlissner/zsh-autopair"
 [ -f $FZFDIR/key-bindings.zsh ] && source $FZFDIR/key-bindings.zsh
 # export FZF_DEFAULT_COMMAND='rg --hidden -l ""'
 autoload -U compinit
-compinit
+compinit -u
 
 # Edit line in vim (using escape)
 autoload edit-command-line; zle -N edit-command-line
