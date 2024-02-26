@@ -6,3 +6,5 @@
 .config/karabiner/automatic_backups
 Brewfile.lock.json
 
+.config/zed/embeddings
+.config/zed/.tmp*
