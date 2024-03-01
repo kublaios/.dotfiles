@@ -1,6 +1,5 @@
 # This is Git's per-user configuration file.
 [user]
-# Please adapt and uncomment the following lines:
 	name = Kubilay Erdogan
 	email = 1839554+kublaios@users.noreply.github.com
 	signingkey = 55D41FEE4CC8FD2E

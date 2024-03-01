@@ -87,3 +87,7 @@ eval "$(github-copilot-cli alias -- "$0")"
 
 # JDK
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home"
+cd /Users/kubilay/Developer/kaia-ios/kaia-ios-app
+
+eval "$(zoxide init --cmd cd zsh)"
+

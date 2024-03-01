@@ -1,0 +1,19 @@
+[
+  {
+    "bindings": {
+      "cmd-shift-t": "workspace::NewTerminal",
+      "cmd-`": "terminal_panel::ToggleFocus",
+      "cmd-shift-y": "workspace::ToggleBottomDock",
+      "cmd-r": "outline::Toggle",
+      "cmd-shift-o": "file_finder::Toggle",
+      "cmd-0": "workspace::ToggleRightDock",
+      "cmd-alt-0": "workspace::ToggleLeftDock"
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "bindings": {
+      "cmd-r": "buffer_search::Dismiss"
+    }
+  }
+]
