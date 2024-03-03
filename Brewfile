@@ -49,8 +49,6 @@ brew "telnet"
 brew "tree"
 # Internet file retriever
 brew "wget"
-# Download YouTube videos from the command-line
-brew "youtube-dl"
 # Simple hotkey-daemon for macOS.
 brew "koekeishiya/formulae/skhd"
 # A tiling window manager for macOS based on binary space partitioning.
@@ -73,6 +71,7 @@ cask "qlmarkdown"
 cask "quicklook-json"
 # System monitor for the menu bar
 cask "stats"
+cask "ccleaner"
 # Install and switch between multiple versions of Xcode
 cask "xcodes"
 cask "notunes"
