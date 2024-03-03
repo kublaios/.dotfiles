@@ -7,6 +7,7 @@ setopt nomatch
 
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
