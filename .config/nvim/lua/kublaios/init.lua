@@ -2,7 +2,7 @@ require("kublaios.set")
 require("kublaios.packer")
 require("kublaios.remap")
 
-vim.wo.relativenumber = true
+vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
 
 vim.cmd([[
 
