@@ -5,6 +5,9 @@ HISTFILE=~/.zsh_history
 setopt appendhistory
 setopt nomatch 
 
+export PATH="/opt/homebrew/bin:$PATH"
+export PATH="/opt/homebrew/sbin:$PATH"
+
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete
 setopt interactive_comments
