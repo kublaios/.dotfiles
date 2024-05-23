@@ -84,3 +84,6 @@ cask "zed"
 brew "npm"
 brew "zoxide"
 brew "fzf"
+brew "vapor"
+# Telescope live_grep
+brew "ripgrep"
