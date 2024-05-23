@@ -21,4 +21,6 @@ nnoremap <leader>q :q<CR>
 nnoremap <leader>Q :q!<CR>
 
 vnoremap <leader>y "*y<CR>
+
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 ]])
