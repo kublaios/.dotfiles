@@ -1,5 +1,5 @@
--- vim.cmd [[ set background=dark ]]
--- vim.cmd [[ colorscheme tokyonight ]]
+vim.cmd [[ set background=light ]]
+vim.cmd [[ colorscheme slate ]]
 -- vim.g.tokyonight_transparent_sidebar = true
 -- vim.g.tokyonight_transparent = true
 
