@@ -13,6 +13,9 @@ nnoremap <leader>- :vertical resize -10<CR>
 nnoremap <leader>rp :resize 100<CR>
 
 nnoremap <leader>u :UndotreeShow<CR>
+nnoremap <leader>tb :split term://zsh<CR>
+nnoremap <leader>tv :vsplit term://zsh<CR>
+tmap <leader>QQ <cmd>exit<CR>
 
 nnoremap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
 
