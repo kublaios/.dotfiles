@@ -7,7 +7,8 @@
       "cmd-r": "outline::Toggle",
       "cmd-shift-o": "file_finder::Toggle",
       "cmd-0": "workspace::ToggleRightDock",
-      "cmd-alt-0": "workspace::ToggleLeftDock"
+      "cmd-alt-0": "workspace::ToggleLeftDock",
+      "ctrl-right": "editor::AcceptPartialInlineCompletion"
     }
   },
   {
