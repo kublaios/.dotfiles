@@ -22,6 +22,7 @@ nnoremap <leader>Q :q!<CR>
 vnoremap <leader>y "*y<CR>
 
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>ff <cmd>Telescope git_files<cr>
 
 nnoremap <silent> <leader>gg :LazyGit<CR>
 ]])
