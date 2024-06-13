@@ -25,4 +25,6 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>ff <cmd>Telescope git_files<cr>
 
 nnoremap <silent> <leader>gg :LazyGit<CR>
+
+inoremap <C-c> <ESC>
 ]])
