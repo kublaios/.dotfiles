@@ -24,7 +24,9 @@ nnoremap <leader>Q :q!<CR>
 vnoremap <leader>y "*y<CR>
 
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fG :execute 'Telescope live_grep default_text=' . expand('<cword>')<cr>
 nnoremap <leader>ff <cmd>Telescope git_files<cr>
+nnoremap <leader>fF :execute 'Telescope find_files default_text=' . expand('<cword>')<cr>
 
 nnoremap <silent> <leader>gg :LazyGit<CR>
 
