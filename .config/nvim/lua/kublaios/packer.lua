@@ -12,5 +12,4 @@ return require('packer').startup(function()
   use 'folke/which-key.nvim'
   use 'folke/flash.nvim'
   use {'kdheepak/lazygit.nvim', requires = {'nvim-lua/plenary.nvim'}}
-  use {'neoclide/coc.nvim', branch = 'release'}
 end)
