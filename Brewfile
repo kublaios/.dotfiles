@@ -66,6 +66,7 @@ brew "wget"
 brew "zoxide"
 # A tiling window manager for macOS based on binary space partitioning.
 brew "koekeishiya/formulae/yabai"
+brew "xcode-build-server"
 
 # Remove junk and unused files
 cask "ccleaner"
