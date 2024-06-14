@@ -1,7 +1,5 @@
 vim.cmd [[ set background=light ]]
 vim.cmd [[ colorscheme slate ]]
--- vim.g.tokyonight_transparent_sidebar = true
--- vim.g.tokyonight_transparent = true
 
 -- set statusline color to black
 vim.cmd [[ hi StatusLine ctermfg=233 ]]
@@ -13,3 +11,6 @@ vim.cmd [[ hi DiffAdd ctermfg=NONE ctermbg=NONE ]]
 vim.cmd [[ hi DiffChange ctermfg=NONE ctermbg=NONE ]]
 vim.cmd [[ hi DiffDelete ctermfg=NONE ctermbg=NONE ]]
 vim.cmd [[ hi DiffText ctermfg=NONE ctermbg=NONE ]]
+
+vim.cmd [[ hi Twilight ctermfg=8 ]]
+vim.cmd [[ TwilightEnable ]]

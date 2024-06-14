@@ -8,7 +8,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
   use 'github/copilot.vim'
-  use 'folke/tokyonight.nvim'
+  use 'folke/twilight.nvim'
   use {'kdheepak/lazygit.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use {'neoclide/coc.nvim', branch = 'release'}
 end)
