@@ -40,3 +40,8 @@ alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/
 
 # always list with -la
 alias ls='ls -la'
+
+# easy navigation
+alias cdd="cd ~/Desktop"
+alias cdv="cd ~/Developer"
+alias cdw="cd ~/Downloads"
