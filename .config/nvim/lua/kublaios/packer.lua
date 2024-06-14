@@ -55,13 +55,13 @@ return require('packer').startup(function()
         -- Make 'enter' key select the completion
         mapping = cmp.mapping.preset.insert({
             ["<CR>"] = cmp.mapping.confirm({ select = true }),
-            ["<tab>"] = cmp.mapping(function(original)
-                if cmp.visible() then
-                    cmp.select_next_item() -- run completion selection if completing
-                else
-                    original()      -- run the original behavior if not completing
-                end
-            end, {"i", "s"}),
+--            ["<tab>"] = cmp.mapping(function(original)
+--                if cmp.visible() then
+--                    cmp.select_next_item() -- run completion selection if completing
+--                else
+--                    original()      -- run the original behavior if not completing
+--                end
+--            end, {"i", "s"}),
         }),
       }
       cmp.setup(opts)
