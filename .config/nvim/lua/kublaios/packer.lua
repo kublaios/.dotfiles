@@ -9,6 +9,8 @@ return require('packer').startup(function()
   use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
   use 'github/copilot.vim'
   use 'folke/twilight.nvim'
+  use 'folke/which-key.nvim'
+  use 'folke/flash.nvim'
   use {'kdheepak/lazygit.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use {'neoclide/coc.nvim', branch = 'release'}
 end)

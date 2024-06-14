@@ -18,3 +18,7 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.g.mapleader = " "
+
+vim.o.timeout = true
+vim.o.timeoutlen = 300
+vim.o.mouse = ''
