@@ -1,6 +1,5 @@
 local nnoremap = require("kublaios.keymap").nnoremap
 local xnoremap = require("kublaios.keymap").xnoremap
-nnoremap("<leader>q", "<cmd>Ex<CR>")
 
 vim.cmd([[
 nnoremap <leader>h :wincmd h<CR>
@@ -19,7 +18,10 @@ tmap <leader>QQ <cmd>exit<CR>
 
 nnoremap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
 
+nnoremap <leader>q <cmd>Ex<CR>
 nnoremap <leader>Q :q!<CR>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>W :wq!<CR>
 
 vnoremap <leader>y "*y<CR>
 

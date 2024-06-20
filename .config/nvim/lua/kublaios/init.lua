@@ -2,6 +2,7 @@ require("kublaios.set")
 require("kublaios.packer")
 require("kublaios.remap")
 require("kublaios.telescope")
+
 local wk = require("which-key")
 wk.setup {
     plugins = {
@@ -53,6 +54,7 @@ wk.register({
         t = { function() require("flash").toggle() end, "Toggle Flash Search" },
     },
 }, { prefix = "<leader>" })
+
 require("flash").setup({})
 
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
