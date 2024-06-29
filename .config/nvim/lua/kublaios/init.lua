@@ -53,6 +53,7 @@ wk.register({
         R = { function() require("flash").treesitter_search() end, "Flash Treesitter Search" },
         t = { function() require("flash").toggle() end, "Toggle Flash Search" },
     },
+    s = { function() require("flash").jump() end, "Flash Jump" },
 }, { prefix = "<leader>" })
 
 require("flash").setup({})
