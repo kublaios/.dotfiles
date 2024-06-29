@@ -13,4 +13,3 @@ vim.cmd [[ hi DiffDelete ctermfg=NONE ctermbg=NONE ]]
 vim.cmd [[ hi DiffText ctermfg=NONE ctermbg=NONE ]]
 
 vim.cmd [[ hi Twilight ctermfg=8 ]]
-vim.cmd [[ TwilightEnable ]]
