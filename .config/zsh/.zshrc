@@ -76,6 +76,3 @@ function z() {
 	fi
 	rm -f -- "$tmp"
 }
-
-# Launch shell with Yazi
-z
