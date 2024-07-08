@@ -44,7 +44,3 @@ alias ls='ls -la'
 # LM Studio CLI
 alias lms='~/.cache/lm-studio/bin/lms'
 
-# easy navigation
-alias cdd="cd ~/Desktop"
-alias cdv="cd ~/Developer"
-alias cdw="cd ~/Downloads"
