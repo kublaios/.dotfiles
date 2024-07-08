@@ -97,11 +97,11 @@
                         ]
                     },
                     {
-                        "description": "f23 to ctrl+shift+t",
+                        "description": "f22 to ctrl+shift+t",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f23"
+                                    "key_code": "f22"
                                 },
                                 "to": [
                                     {
@@ -117,18 +117,18 @@
                         ]
                     },
                     {
-                        "description": "f22 to ctrl+shift+t",
+                        "description": "f23 to ctrl+alt+n",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f22"
+                                    "key_code": "f23"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "t",
+                                        "key_code": "n",
                                         "modifiers": [
                                             "left_control",
-                                            "left_shift"
+                                            "left_option"
                                         ]
                                     }
                                 ],
