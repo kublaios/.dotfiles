@@ -61,7 +61,6 @@ bindkey '^ ' complete-word # ctrl-space
 bindkey '^I' autosuggest-accept # tab
 
 eval "$(rbenv init - zsh)"
-eval "$(github-copilot-cli alias -- "$0")"
 eval "$(zoxide init --cmd cd zsh)"
 
 # GPG fix for 'signing failed: Inappropriate ioctl for device'
