@@ -4,8 +4,6 @@ vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.splitright = true
 vim.opt.splitbelow = true
--- highlight the current line
-vim.opt.cursorline = true
 -- always show the sign column to avoid screen flickering for lsp errors
 vim.opt.signcolumn = "yes"
 
