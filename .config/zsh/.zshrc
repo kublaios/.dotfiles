@@ -66,3 +66,8 @@ eval "$(zoxide init --cmd cd zsh)"
 # GPG fix for 'signing failed: Inappropriate ioctl for device'
 export GPG_TTY=$(tty)
 
+# Termius fix for fastlane commands
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
