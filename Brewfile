@@ -62,14 +62,6 @@ brew "tree"
 brew "vapor"
 # Internet file retriever
 brew "wget"
-# Yazi dependencies
-brew "ffmpegthumbnailer"
-brew "unar"
-brew "jq"
-brew "poppler"
-brew "fd"
-# Terminal file manager
-brew "yazi"
 brew "zoxide"
 # A tiling window manager for macOS based on binary space partitioning.
 brew "koekeishiya/formulae/yabai"
@@ -80,8 +72,6 @@ cask "ccleaner"
 cask "ccleaner"
 # Xcode extension for Github Copilot
 cask "copilot-for-xcode"
-# Yazi icon support
-cask "font-meslo-lg-nerd-font"
 # Keyboard customizer
 cask "karabiner-elements"
 cask "lm-studio"

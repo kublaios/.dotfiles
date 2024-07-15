@@ -66,12 +66,3 @@ eval "$(zoxide init --cmd cd zsh)"
 # GPG fix for 'signing failed: Inappropriate ioctl for device'
 export GPG_TTY=$(tty)
 
-# Yazi helper to set the current working directory
-function z() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
