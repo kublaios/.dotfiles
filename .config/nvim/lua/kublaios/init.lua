@@ -3,6 +3,14 @@ require("kublaios.packer")
 require("kublaios.remap")
 require("kublaios.telescope")
 
+require("oil").setup({
+    columns = { "icon" },
+    default_file_explorer = false,
+    view_options = {
+        show_hidden = true
+    }
+})
+
 local wk = require("which-key")
 wk.setup {
     plugins = {
@@ -43,18 +51,14 @@ wk.setup {
         zindex = 1000,            -- positive value to position WhichKey above other floating windows.
     },
 }
-wk.register({
-    -- flash search
-    f = {
-        name = "flash",
-        s = { function() require("flash").jump() end, "Flash Jump" },
-        S = { function() require("flash").treesitter() end, "Flash Treesitter" },
-        r = { function() require("flash").remote() end, "Remote Flash" },
-        R = { function() require("flash").treesitter_search() end, "Flash Treesitter Search" },
-        t = { function() require("flash").toggle() end, "Toggle Flash Search" },
-    },
-    s = { function() require("flash").jump() end, "Flash Jump" },
-}, { prefix = "<leader>" })
+wk.add({
+    { "<leader>f", group = "flash" },
+    { "<leader>fr", function() require("flash").remote() end, desc = "Remote Flash" },
+    { "<leader>fR", function() require("flash").treesitter_search() end, desc = "Flash Treesitter Search" },
+    { "<leader>s", function() require("flash").jump() end, desc = "Flash Jump" },
+    { "<leader>S", function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+    { "_", function() require("oil").open_float() end, desc = "Open Oil in floating window" }
+})
 
 require("flash").setup({})
 

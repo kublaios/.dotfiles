@@ -8,6 +8,7 @@ return require('packer').startup(function()
   use 'wbthomason/packer.nvim'
   use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
   use 'nvim-treesitter/nvim-treesitter'
+  use 'stevearc/oil.nvim'
   use 'github/copilot.vim'
   use 'folke/twilight.nvim'
   use 'folke/which-key.nvim'

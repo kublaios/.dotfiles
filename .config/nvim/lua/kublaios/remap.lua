@@ -2,6 +2,7 @@ local nnoremap = require("kublaios.keymap").nnoremap
 local xnoremap = require("kublaios.keymap").xnoremap
 
 vim.cmd([[
+nnoremap - :Oil<CR>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
@@ -14,7 +15,6 @@ nnoremap <leader>rp :resize 100<CR>
 nnoremap <leader>u :UndotreeShow<CR>
 nnoremap <leader>tb :split term://zsh<CR>
 nnoremap <leader>tv :vsplit term://zsh<CR>
-tmap <leader>QQ <cmd>exit<CR>
 
 nnoremap <leader>phw :h <C-R>=expand("<cword>")<CR><CR>
 
