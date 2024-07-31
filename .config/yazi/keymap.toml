@@ -1,4 +1,0 @@
-[manager]
-prepend_keymap = [
-	{ on = [ "N" ], run = 'shell "nvim ." --block --confirm', desc = "Open Neovim in current directory" },
-]
