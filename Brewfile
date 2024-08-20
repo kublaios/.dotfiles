@@ -53,8 +53,6 @@ brew "ruby-build"
 brew "shared-mime-info"
 brew "stow"
 brew "swiftlint"
-# Simple hotkey-daemon for macOS.
-brew "koekeishiya/formulae/skhd"
 brew "telnet"
 brew "totp-cli"
 # Display directories as trees (with optional color/HTML output)
@@ -63,8 +61,6 @@ brew "vapor"
 # Internet file retriever
 brew "wget"
 brew "zoxide"
-# A tiling window manager for macOS based on binary space partitioning.
-brew "koekeishiya/formulae/yabai"
 brew "xcode-build-server"
 
 # Remove junk and unused files
