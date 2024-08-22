@@ -3,7 +3,6 @@ tap "homebrew/cask"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
-tap "koekeishiya/formulae"
 
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
@@ -54,59 +53,27 @@ brew "shared-mime-info"
 brew "stow"
 brew "swiftlint"
 brew "telnet"
-brew "totp-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-brew "vapor"
 # Internet file retriever
 brew "wget"
 brew "zoxide"
-brew "xcode-build-server"
 
-# Remove junk and unused files
-cask "ccleaner"
-cask "ccleaner"
+# Spotlight killer
+cask "raycast"
 # Xcode extension for Github Copilot
 cask "copilot-for-xcode"
 # Keyboard customizer
 cask "karabiner-elements"
-cask "lm-studio"
 # File system integration
 cask "macfuse"
 # Re-mounts write-protected NTFS volumes
 cask "mounty"
-cask "notunes"
 cask "obsidian"
 # QuickLook generator for Markdown files
 cask "qlmarkdown"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
-# System monitor for the menu bar
-cask "stats"
 # Install and switch between multiple versions of Xcode
 cask "xcodes"
 cask "zed"
-
-vscode "aaronthomas.vscode-snazzy-operator"
-vscode "asvetliakov.vscode-neovim"
-vscode "circleci.circleci"
-vscode "francisco.html-leaf"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "github.remotehub"
-vscode "github.vscode-github-actions"
-vscode "github.vscode-pull-request-github"
-vscode "mohsen1.prettify-json"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode.cpptools"
-vscode "ms-vscode.remote-repositories"
-vscode "ms-vscode.sublime-keybindings"
-vscode "rangav.vscode-thunder-client"
-vscode "redhat.vscode-yaml"
-vscode "shopify.ruby-lsp"
-vscode "sswg.swift-lang"
-vscode "tabnine.tabnine-vscode"
-vscode "vadimcn.vscode-lldb"
-vscode "vknabel.vscode-apple-swift-format"
-vscode "vscodevim.vim"
