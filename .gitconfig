@@ -2,7 +2,7 @@
 [user]
 	name = Kubilay Erdogan
 	email = 1839554+kublaios@users.noreply.github.com
-	signingkey = 55D41FEE4CC8FD2E
+	signingkey = 58A99EB0DF14078B
 [core]
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
