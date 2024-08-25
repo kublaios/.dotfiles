@@ -7,4 +7,5 @@
 Brewfile.lock.json
 
 .config/zed/embeddings
+.config/zed/prompts
 .config/zed/.tmp*
