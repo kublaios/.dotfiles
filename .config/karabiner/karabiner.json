@@ -6,6 +6,7 @@
                 "rules": [
                     {
                         "description": "keypad_1 to ctrl+up",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_1" },
@@ -21,6 +22,7 @@
                     },
                     {
                         "description": "keypad_2 to ctrl+shift+left",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_2" },
@@ -36,6 +38,7 @@
                     },
                     {
                         "description": "keypad_3 to ctrl+shift+right",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_3" },
@@ -51,6 +54,7 @@
                     },
                     {
                         "description": "keypad_4 to cmd+w",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_4" },
@@ -66,6 +70,7 @@
                     },
                     {
                         "description": "keypad_5 to return_or_enter",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_5" },
@@ -76,6 +81,7 @@
                     },
                     {
                         "description": "keypad_6 to cmd+q",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_6" },
@@ -91,6 +97,7 @@
                     },
                     {
                         "description": "keypad_7 to ctrl+shift+1",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_7" },
@@ -106,6 +113,7 @@
                     },
                     {
                         "description": "keypad_8 to cmd+shift+1",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_8" },
@@ -121,6 +129,7 @@
                     },
                     {
                         "description": "keypad_hyphen to cmd+left",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_hyphen" },
@@ -136,38 +145,13 @@
                     },
                     {
                         "description": "keypad_plus to cmd+right",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_plus" },
                                 "to": [
                                     {
                                         "key_code": "right_arrow",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Use cmd+shift+d to duplicate selection (Xcode)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": { "mandatory": ["command", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": ["left_command"]
-                                    },
-                                    {
-                                        "key_code": "v",
-                                        "modifiers": ["left_command"]
-                                    },
-                                    {
-                                        "key_code": "v",
                                         "modifiers": ["left_command"]
                                     }
                                 ],
@@ -547,7 +531,8 @@
                 }
             ],
             "name": "Default",
-            "selected": true
+            "selected": true,
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
 }
