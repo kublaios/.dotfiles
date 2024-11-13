@@ -718,6 +718,15 @@
                         "vendor_id": 12815
                     },
                     "ignore": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 2464,
+                        "vendor_id": 13364
+                    },
+                    "ignore": false
                 }
             ],
             "fn_function_keys": [
