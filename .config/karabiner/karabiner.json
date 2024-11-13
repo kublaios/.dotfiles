@@ -5,7 +5,215 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "function key modifications for raycast and xcode",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "f13" },
+                                "to": [
+                                    {
+                                        "key_code": "1",
+                                        "modifiers": ["left_command", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f14" },
+                                "to": [
+                                    {
+                                        "key_code": "1",
+                                        "modifiers": ["left_control", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f15" },
+                                "to": [
+                                    {
+                                        "key_code": "x",
+                                        "modifiers": ["left_command", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f16" },
+                                "to": [
+                                    {
+                                        "key_code": "o",
+                                        "modifiers": ["left_command", "left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f17" },
+                                "to": [
+                                    {
+                                        "key_code": "j",
+                                        "modifiers": ["left_control", "left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f18" },
+                                "to": [
+                                    {
+                                        "key_code": "f",
+                                        "modifiers": ["left_control", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f19" },
+                                "to": [
+                                    {
+                                        "key_code": "grave_accent_and_tilde",
+                                        "modifiers": ["left_control", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f20" },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": ["left_control", "left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f21" },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": ["left_control", "left_command"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f22" },
+                                "to": [
+                                    {
+                                        "key_code": "s",
+                                        "modifiers": ["left_control", "left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f23" },
+                                "to": [
+                                    {
+                                        "key_code": "w",
+                                        "modifiers": ["left_control", "left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "f24" },
+                                "to": [
+                                    {
+                                        "key_code": "v",
+                                        "modifiers": ["left_control", "left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Left control+e to return_or_enter",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "e",
+                                    "modifiers": { "mandatory": ["left_control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter",
+                                        "modifiers": []
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Caps Lock to Esc and Ctrl",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "caps_lock",
+                                    "modifiers": { "optional": ["any"] }
+                                },
+                                "to": [{ "key_code": "left_control" }],
+                                "to_if_alone": [{ "key_code": "escape" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change right_command+hjkl to arrow keys",
+                        "enabled": false,
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "left_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "down_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "up_arrow" }],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "mandatory": ["right_command"],
+                                        "optional": ["any"]
+                                    }
+                                },
+                                "to": [{ "key_code": "right_arrow" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "keypad_1 to ctrl+up",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_1" },
@@ -21,6 +229,7 @@
                     },
                     {
                         "description": "keypad_2 to ctrl+shift+left",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_2" },
@@ -36,6 +245,7 @@
                     },
                     {
                         "description": "keypad_3 to ctrl+shift+right",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_3" },
@@ -51,6 +261,7 @@
                     },
                     {
                         "description": "keypad_4 to cmd+w",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_4" },
@@ -66,6 +277,7 @@
                     },
                     {
                         "description": "keypad_5 to return_or_enter",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_5" },
@@ -76,6 +288,7 @@
                     },
                     {
                         "description": "keypad_6 to cmd+q",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_6" },
@@ -91,6 +304,7 @@
                     },
                     {
                         "description": "keypad_7 to ctrl+shift+1",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_7" },
@@ -106,6 +320,7 @@
                     },
                     {
                         "description": "keypad_8 to cmd+shift+1",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_8" },
@@ -121,6 +336,7 @@
                     },
                     {
                         "description": "keypad_hyphen to cmd+left",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_hyphen" },
@@ -136,38 +352,13 @@
                     },
                     {
                         "description": "keypad_plus to cmd+right",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_plus" },
                                 "to": [
                                     {
                                         "key_code": "right_arrow",
-                                        "modifiers": ["left_command"]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "Use cmd+shift+d to duplicate selection (Xcode)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "d",
-                                    "modifiers": { "mandatory": ["command", "shift"] }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": ["left_command"]
-                                    },
-                                    {
-                                        "key_code": "v",
-                                        "modifiers": ["left_command"]
-                                    },
-                                    {
-                                        "key_code": "v",
                                         "modifiers": ["left_command"]
                                     }
                                 ],
@@ -188,6 +379,14 @@
                         {
                             "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
                             "to": [{ "key_code": "left_control" }]
+                        },
+                        {
+                            "from": { "key_code": "grave_accent_and_tilde" },
+                            "to": [{ "key_code": "vk_none" }]
+                        },
+                        {
+                            "from": { "key_code": "non_us_backslash" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
                         },
                         {
                             "from": { "key_code": "right_option" },
@@ -351,15 +550,6 @@
                 {
                     "identifiers": {
                         "is_keyboard": true,
-                        "is_pointing_device": true,
-                        "product_id": 45092,
-                        "vendor_id": 1133
-                    },
-                    "ignore": false
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
                         "product_id": 13330,
                         "vendor_id": 14
                     },
@@ -391,7 +581,7 @@
                     "simple_modifications": [
                         {
                             "from": { "key_code": "grave_accent_and_tilde" },
-                            "to": [{ "key_code": "non_us_backslash" }]
+                            "to": [{ "key_code": "vk_none" }]
                         },
                         {
                             "from": { "key_code": "non_us_backslash" },
@@ -488,7 +678,6 @@
                     ]
                 },
                 {
-                    "disable_built_in_keyboard_if_exists": true,
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": true,
@@ -500,35 +689,38 @@
                 {
                     "identifiers": {
                         "is_keyboard": true,
-                        "is_pointing_device": true,
                         "product_id": 2464,
                         "vendor_id": 13364
+                    },
+                    "treat_as_built_in_keyboard": true
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 47367,
+                        "vendor_id": 8654
                     },
                     "ignore": false,
-                    "treat_as_built_in_keyboard": true
+                    "mouse_flip_vertical_wheel": true,
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "right_control" }]
+                        }
+                    ]
                 },
                 {
                     "identifiers": {
                         "is_keyboard": true,
-                        "product_id": 2464,
-                        "vendor_id": 13364
+                        "is_pointing_device": true,
+                        "product_id": 20565,
+                        "vendor_id": 12815
                     },
-                    "treat_as_built_in_keyboard": true
-                },
-                {
-                    "identifiers": {
-                        "is_keyboard": true,
-                        "product_id": 50489,
-                        "vendor_id": 1133
-                    },
-                    "treat_as_built_in_keyboard": true
+                    "ignore": false
                 }
             ],
             "fn_function_keys": [
-                {
-                    "from": { "key_code": "f3" },
-                    "to": [{ "key_code": "mission_control" }]
-                },
                 {
                     "from": { "key_code": "f4" },
                     "to": [{ "key_code": "launchpad" }]
@@ -547,7 +739,8 @@
                 }
             ],
             "name": "Default",
-            "selected": true
+            "selected": true,
+            "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
         }
     ]
 }
