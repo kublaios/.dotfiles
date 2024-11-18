@@ -2,7 +2,7 @@ local nnoremap = require("kublaios.keymap").nnoremap
 local xnoremap = require("kublaios.keymap").xnoremap
 
 vim.cmd([[
-nnoremap - :Oil<CR>
+nnoremap = :Oil<CR>
 nnoremap <leader>h :wincmd h<CR>
 nnoremap <leader>j :wincmd j<CR>
 nnoremap <leader>k :wincmd k<CR>
