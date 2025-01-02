@@ -1,3 +1,7 @@
+-- Make sure to configure Twilight before setting colorscheme
+-- Otherwise, it will not work
+vim.cmd [[ hi Twilight ctermfg=8 ]]
+
 vim.cmd [[ set background=light ]]
 vim.cmd [[ colorscheme slate ]]
 
@@ -11,8 +15,6 @@ vim.cmd [[ hi DiffAdd ctermfg=NONE ctermbg=NONE ]]
 vim.cmd [[ hi DiffChange ctermfg=NONE ctermbg=NONE ]]
 vim.cmd [[ hi DiffDelete ctermfg=NONE ctermbg=NONE ]]
 vim.cmd [[ hi DiffText ctermfg=NONE ctermbg=NONE ]]
-
-vim.cmd [[ hi Twilight ctermfg=8 ]]
 
 vim.cmd [[ set cursorline ]]
 vim.cmd [[ hi CursorLine ctermfg=White ctermbg=131 cterm=bold guifg=white guibg=yellow gui=bold ]]
