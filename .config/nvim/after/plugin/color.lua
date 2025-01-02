@@ -3,7 +3,7 @@
 vim.cmd [[ hi Twilight ctermfg=8 ]]
 
 vim.cmd [[ set background=light ]]
-vim.cmd [[ colorscheme slate ]]
+vim.cmd [[ colorscheme torte ]]
 
 -- set statusline color to red
 vim.cmd [[ hi StatusLine ctermfg=15 ctermbg=0 ]]
