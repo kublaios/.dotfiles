@@ -23,7 +23,6 @@ nnoremap("<leader>vh", function()
     require('telescope.builtin').help_tags()
 end)
 
--- TODO: Fix this immediately
 nnoremap("<leader>vwh", function()
     require('telescope.builtin').help_tags()
 end)

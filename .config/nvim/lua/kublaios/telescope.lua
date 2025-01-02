@@ -27,24 +27,12 @@ require("telescope").setup({
             additional_args = {"--hidden"}
         },
     },
-    --[[
-    extensions = {
-    fzy_native = {
-    override_generic_sorter = false,
-    override_file_sorter = true,
-    },
-    },
-    ]]
 })
 
--- require("telescope").load_extension("git_worktree")
--- require("telescope").load_extension("fzy_native")
 
 local M = {}
 
 function M.reload_modules()
-    -- Because TJ gave it to me.  Makes me happpy.  Put it next to his other
-    -- awesome things.
     local lua_dirs = vim.fn.glob("./lua/*", 0, 1)
     for _, dir in ipairs(lua_dirs) do
         dir = string.gsub(dir, "./lua/", "")
@@ -139,7 +127,6 @@ M.dev = function(opts)
     opts = opts or {}
 
     opts.cwd = opts.cwd or vim.loop.fs_realpath(vim.loop.cwd())
-    print("HEY BAE", opts.cwd)
 
     local possible_files = vim.api.nvim_get_runtime_file("/lua/**/dev.lua", true)
     local local_files = {}
@@ -156,7 +143,8 @@ M.dev = function(opts)
     local ok, mod = pcall(loaded)
     if not ok then
         print("===================================================")
-        print("HEY PRIME. YOUR CODE DOESNT WORK. THIS IS NOT ON ME")
+        print("An error occurred.")
+        print(dev)
         print("===================================================")
         return
     end
@@ -174,7 +162,7 @@ M.dev = function(opts)
     local mod_name = vim.split(dev, "/lua/")
     if #mod_name ~= 2 then
         print("===================================================")
-        print("HEY PRIME. I DO NOT KNOW HOW TO FIND THIS FILE:")
+        print("An error occurred.")
         print(dev)
         print("===================================================")
     end
