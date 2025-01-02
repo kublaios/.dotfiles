@@ -18,3 +18,9 @@ vim.cmd [[ set cursorline ]]
 vim.cmd [[ hi CursorLine ctermfg=White ctermbg=131 cterm=bold guifg=white guibg=yellow gui=bold ]]
 vim.cmd [[ set cursorcolumn ]]
 vim.cmd [[ hi CursorColumn ctermfg=White ctermbg=131 cterm=bold guifg=white guibg=yellow gui=bold ]]
+
+-- Remove all background colors to make it transparent
+vim.cmd [[ highlight Normal guibg=none ]]
+vim.cmd [[ highlight NonText guibg=none ]]
+vim.cmd [[ highlight Normal ctermbg=none ]]
+vim.cmd [[ highlight NonText ctermbg=none ]]
