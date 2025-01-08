@@ -62,6 +62,7 @@ brew "zoxide"
 cask "raycast"
 # Xcode extension for Github Copilot
 cask "copilot-for-xcode"
+cask "font-bitstream-vera-sans-mono-nerd-font"
 cask "ghostty"
 # Keyboard customizer
 cask "karabiner-elements"
