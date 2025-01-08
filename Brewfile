@@ -6,7 +6,6 @@ tap "jesseduffield/lazygit"
 
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
-brew "curl/openssl"
 # Telescope live_grep
 brew "fzf"
 # Distributed revision control system
@@ -63,6 +62,7 @@ brew "zoxide"
 cask "raycast"
 # Xcode extension for Github Copilot
 cask "copilot-for-xcode"
+cask "ghostty"
 # Keyboard customizer
 cask "karabiner-elements"
 # File system integration
