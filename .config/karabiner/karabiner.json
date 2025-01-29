@@ -5,6 +5,21 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "keypad_fn to cmd+shift_space",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "fn" },
+                                "to": [
+                                    {
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command", "left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Left control+e to return_or_enter",
                         "manipulators": [
                             {
@@ -251,10 +266,6 @@
                         "vendor_id": 1452
                     },
                     "simple_modifications": [
-                        {
-                            "from": { "apple_vendor_top_case_key_code": "keyboard_fn" },
-                            "to": [{ "key_code": "left_control" }]
-                        },
                         {
                             "from": { "key_code": "grave_accent_and_tilde" },
                             "to": [{ "key_code": "vk_none" }]
