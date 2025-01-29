@@ -14,6 +14,8 @@ brew "git"
 brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+brew "koekeishiya/formulae/skhd"
+brew "koekeishiya/formulae/yabai"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
 # Convert pixel information into colored ASCII art
