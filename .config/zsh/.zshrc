@@ -4,12 +4,27 @@ HISTFILE=~/.zsh_history
 setopt appendhistory
 setopt nomatch 
 
-export PATH="/opt/homebrew/bin:$PATH"
-export PATH="/opt/homebrew/sbin:$PATH"
+if [[ "$(uname)" == "Darwin" ]]; then
+  # Homebrew
+  export PATH="/opt/homebrew/bin:$PATH"
+  export PATH="/opt/homebrew/sbin:$PATH"
+  # Golang environment variables
+  export GOROOT=$(brew --prefix go)/libexec
+  # Added by LM Studio CLI (lms)
+  export PATH="$PATH:/Users/chainbreaker/.cache/lm-studio/bin"
+fi
+if [[ "$(uname)" == "Linux" ]]; then
+  # Nvim
+  export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
+  # Node
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Golang environment variables
-export GOROOT=$(brew --prefix go)/libexec
 export GOPATH=$HOME/go
 export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
 
@@ -75,7 +90,3 @@ export GPG_TTY=$(tty)
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
-
-# Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/chainbreaker/.cache/lm-studio/bin"
