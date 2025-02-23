@@ -11,6 +11,7 @@ return require('packer').startup(function()
   use 'github/copilot.vim'
   use 'folke/twilight.nvim'
   use 'folke/which-key.nvim'
+  use 'preservim/vimux'
   use 'echasnovski/mini.icons' -- which-key dependency
   use 'nvim-tree/nvim-web-devicons' -- which-key dependency
   use 'folke/flash.nvim'

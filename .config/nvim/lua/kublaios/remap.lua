@@ -30,5 +30,19 @@ nnoremap <leader>fG :execute 'Telescope live_grep default_text=' . expand('<cwor
 nnoremap <leader>ff <cmd>Telescope git_files<cr>
 nnoremap <leader>fF :execute 'Telescope find_files default_text=' . expand('<cword>')<cr>
 
+" Prompt for a command to run map
+map <leader>vc :VimuxPromptCommand<CR>
+" Run last command executed by VimuxRunCommand
+map <leader>vl :VimuxRunLastCommand<CR>
+" Inspect runner pane map
+map <leader>vi :VimuxInspectRunner<CR>
+" Close vim tmux runner opened by VimuxRunCommand
+map <leader>vk :VimuxClearTerminalScreen<CR>
+map <leader>vq :VimuxCloseRunner<CR>
+" Vimux Swift commands
+map <leader>sb :VimuxPromptCommand("swift build")<CR>
+map <leader>sr :VimuxPromptCommand("swift run")<CR>
+map <leader>st :VimuxPromptCommand("swift test")<CR>
+
 inoremap <C-c> <ESC>
 ]])
