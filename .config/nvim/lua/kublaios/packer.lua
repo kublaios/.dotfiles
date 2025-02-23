@@ -14,7 +14,6 @@ return require('packer').startup(function()
   use 'echasnovski/mini.icons' -- which-key dependency
   use 'nvim-tree/nvim-web-devicons' -- which-key dependency
   use 'folke/flash.nvim'
-  use {'kdheepak/lazygit.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use {
     "wojciech-kulik/xcodebuild.nvim",
     requires = {
