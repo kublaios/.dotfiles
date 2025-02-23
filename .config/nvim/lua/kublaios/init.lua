@@ -48,11 +48,6 @@ wk.add({
 })
 
 require("flash").setup({})
-require("twilight").setup({
-  dimming = {
-    alpha = 0.65,
-  },
-})
 
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
 

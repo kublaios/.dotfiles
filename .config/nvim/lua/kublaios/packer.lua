@@ -9,7 +9,6 @@ return require('packer').startup(function()
   use {'nvim-telescope/telescope.nvim', requires = {{'nvim-lua/plenary.nvim'}}}
   use 'stevearc/oil.nvim'
   use 'github/copilot.vim'
-  use 'folke/twilight.nvim'
   use 'folke/which-key.nvim'
   use 'preservim/vimux'
   use 'echasnovski/mini.icons' -- which-key dependency

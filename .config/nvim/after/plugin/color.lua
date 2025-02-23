@@ -1,6 +1,3 @@
--- Make sure to configure Twilight before setting colorscheme
--- Otherwise, it will not work
-vim.cmd [[ hi Twilight ctermfg=8 ]]
 vim.cmd [[ colorscheme torte ]]
 
 vim.cmd [[ hi LineNr ctermfg=darkgray ctermbg=NONE ]]
