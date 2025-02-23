@@ -15,6 +15,47 @@ return require('packer').startup(function()
   use 'nvim-tree/nvim-web-devicons' -- which-key dependency
   use 'folke/flash.nvim'
   use {
+    'neovim/nvim-lspconfig',
+    event = { "BufReadPre", "BufNewFile" },
+    config = function()
+      -- Ref: https://www.swift.org/documentation/articles/zero-to-swift-nvim.html
+      local lsp = require('lspconfig')
+      lsp.sourcekit.setup({
+        capabilities = {
+          workspace = {
+            didChangeWatchedFiles = {
+              dynamicRegistration = true,
+            },
+          },
+        },
+      })
+    end
+  }
+  use {
+    'hrsh7th/nvim-cmp',
+    requires = {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-buffer",
+    },
+    config = function()
+      local cmp = require('cmp')
+      local opts = {
+        -- Where to get completion results from
+        sources = cmp.config.sources {
+          { name = "nvim_lsp" },
+          { name = "buffer" },
+          { name = "path" },
+        },
+        -- Make 'enter' key select the completion
+        mapping = cmp.mapping.preset.insert({
+            ["<CR>"] = cmp.mapping.confirm({ select = true }),
+        }),
+      }
+      cmp.setup(opts)
+    end,
+  }
+  use {
     "wojciech-kulik/xcodebuild.nvim",
     requires = {
       "nvim-telescope/telescope.nvim",
@@ -26,7 +67,7 @@ return require('packer').startup(function()
       vim.keymap.set("n", "<leader>X", "<cmd>XcodebuildPicker<cr>", { desc = "Show All Xcodebuild actions" })
       vim.keymap.set("n", "<leader>xl", "<cmd>XcodebuildToggleLogs<cr>", { desc = "Toggle Xcodebuild logs" })
       vim.keymap.set("n", "<leader>xb", "<cmd>XcodebuildBuild<cr>", { desc = "Build project" })
-      vim.keymap.set("n", "<leader>R", "<cmd>XcodebuildBuildRun<cr>", { desc = "Build & run project" })
+      vim.keymap.set("n", "<leader>xr", "<cmd>XcodebuildBuildRun<cr>", { desc = "Build & run project" })
       vim.keymap.set("n", "<leader>xs", "<cmd>XcodebuildCancel<cr>", { desc = "Cancel running action" })
       vim.keymap.set("n", "<leader>xt", "<cmd>XcodebuildTest<cr>", { desc = "Run tests" })
       vim.keymap.set("n", "<leader>xT", "<cmd>XcodebuildTestClass<cr>", { desc = "Run this test class" })
