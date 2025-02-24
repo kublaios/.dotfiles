@@ -5,6 +5,25 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Ctrl-1 to switch tmux pane",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "1",
+                                    "modifiers": { "mandatory": ["control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "b",
+                                        "modifiers": ["control"]
+                                    },
+                                    { "key_code": "o" }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Ctrl-Alt-C to copy browser URL",
                         "manipulators": [
                             {
