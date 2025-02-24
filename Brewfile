@@ -54,6 +54,7 @@ brew "shared-mime-info"
 brew "stow"
 brew "swiftlint"
 brew "telnet"
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
