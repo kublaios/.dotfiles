@@ -4,10 +4,12 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
 
+brew "bat"
 # Get a file from an HTTP, HTTPS or FTP server
 brew "curl"
 # Telescope live_grep
 brew "fzf"
+brew "gh"
 # Distributed revision control system
 brew "git"
 # Generate introspection data for GObject libraries
@@ -81,4 +83,4 @@ cask "qlmarkdown"
 cask "quicklook-json"
 # Install and switch between multiple versions of Xcode
 cask "xcodes"
-cask "zed"
+cask "zen-browser"
