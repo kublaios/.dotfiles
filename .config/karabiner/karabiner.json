@@ -5,7 +5,7 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "Ctrl-1 to switch tmux pane",
+                        "description": "Ctrl-1 to next tmux window",
                         "manipulators": [
                             {
                                 "from": {
@@ -17,34 +17,26 @@
                                         "key_code": "b",
                                         "modifiers": ["control"]
                                     },
-                                    { "key_code": "o" }
+                                    { "key_code": "n" }
                                 ],
                                 "type": "basic"
                             }
                         ]
                     },
                     {
-                        "description": "Ctrl-Alt-C to copy browser URL",
+                        "description": "Ctrl-` to switch tmux pane",
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "c",
-                                    "modifiers": {
-                                        "mandatory": ["control", "option"],
-                                        "optional": ["any"]
-                                    }
+                                    "key_code": "grave_accent_and_tilde",
+                                    "modifiers": { "mandatory": ["control"] }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "l",
-                                        "modifiers": ["command"]
+                                        "key_code": "b",
+                                        "modifiers": ["control"]
                                     },
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": ["command"]
-                                    },
-                                    { "key_code": "escape" },
-                                    { "key_code": "escape" }
+                                    { "key_code": "o" }
                                 ],
                                 "type": "basic"
                             }
