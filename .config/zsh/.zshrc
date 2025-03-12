@@ -14,6 +14,7 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export PATH="$PATH:/Users/chainbreaker/.cache/lm-studio/bin"
 fi
 if [[ "$(uname)" == "Linux" ]]; then
+  export PATH="$PATH:/var/lib/flatpak/exports/bin"
   # Nvim
   export PATH="$PATH:/opt/nvim-linux-x86_64/bin"
   # Node
