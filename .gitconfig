@@ -1,8 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Kubilay Erdogan
-	email = 1839554+kublaios@users.noreply.github.com
-	signingkey = 93A076B30F4CEAA4
 [core]
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
