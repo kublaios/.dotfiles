@@ -90,3 +90,12 @@ export GPG_TTY=$(tty)
 export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+# Launch tmux if not already running
+if [ -z "$TMUX" ]; then
+    # Check if tmux is installed
+    if command -v tmux &> /dev/null; then
+        # Attempt to attach to existing session, or create new one
+        exec tmux new-session -A -s main
+    fi
+fi
