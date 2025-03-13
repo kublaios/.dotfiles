@@ -99,3 +99,8 @@ if [ -z "$TMUX" ]; then
         exec tmux new-session -A -s main
     fi
 fi
+if [[ "$(uname)" == "Linux" ]]; then
+    if command -v i3-msg &> /dev/null; then
+        i3-msg "fullscreen"
+    fi
+fi
