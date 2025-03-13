@@ -66,9 +66,3 @@ alias cc=fzf-clipboard
 
 # lazygit
 alias ll=lazygit
-
-if [[ "$(uname)" == "Linux" ]]; then
-    if command -v batcat &> /dev/null; then
-        alias bat=batcat
-    fi
-fi
