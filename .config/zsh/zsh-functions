@@ -36,6 +36,8 @@ function mach_java_mode() {
     [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 }
 
+cht() { sh ~/.dotfiles/scripts/tmux-cht.sh }
+
 if [[ "$(uname)" == "Linux" ]]; then
   # start fuzzy finder frontend to greenclip
   fzf-clipboard() { echo -n "$(greenclip print | fzf -e -i)" | xclip -selection clipboard ;}
