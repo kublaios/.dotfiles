@@ -63,3 +63,6 @@ alias 'git?'=gh_copilot_git_suggest
 
 # clipboard history
 alias cc=fzf-clipboard
+
+# lazygit
+alias ll=lazygit
