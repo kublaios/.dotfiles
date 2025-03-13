@@ -101,6 +101,6 @@ if [ -z "$TMUX" ]; then
 fi
 if [[ "$(uname)" == "Linux" ]]; then
     if command -v i3-msg &> /dev/null; then
-        i3-msg "fullscreen"
+        i3-msg '[class="zen|ghostty"] fullscreen enable'
     fi
 fi
