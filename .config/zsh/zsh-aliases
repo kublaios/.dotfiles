@@ -60,3 +60,6 @@ function gh_copilot_git_suggest {
 alias '??'=gh_copilot_shell_suggest
 alias 'gh?'=gh_copilot_gh_suggest
 alias 'git?'=gh_copilot_git_suggest
+
+# clipboard history
+alias cc=fzf-clipboard

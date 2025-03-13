@@ -103,4 +103,8 @@ if [[ "$(uname)" == "Linux" ]]; then
     if command -v i3-msg &> /dev/null; then
         i3-msg '[class="zen|ghostty"] fullscreen enable'
     fi
+    # Start greenclip if it's not running
+    if ! pgrep -x "greenclip" > /dev/null; then
+        greenclip daemon &>/dev/null &!
+    fi
 fi
