@@ -66,3 +66,6 @@ alias cc=fzf-clipboard
 
 # lazygit
 alias ll=lazygit
+
+# fzf with bat
+alias ff='vim $(fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")'
