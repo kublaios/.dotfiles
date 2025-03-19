@@ -29,7 +29,6 @@ require("telescope").setup({
     },
 })
 
-
 local M = {}
 
 function M.reload_modules()

@@ -14,6 +14,12 @@ return require('packer').startup(function()
   use 'echasnovski/mini.icons' -- which-key dependency
   use 'nvim-tree/nvim-web-devicons' -- which-key dependency
   use 'folke/flash.nvim'
+  use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+  use {
+    "ThePrimeagen/harpoon",
+    branch = "harpoon2",
+    requires = { {"nvim-lua/plenary.nvim"} }
+  }
   use {
     'neovim/nvim-lspconfig',
     event = { "BufReadPre", "BufNewFile" },
