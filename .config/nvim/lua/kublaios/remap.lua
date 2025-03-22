@@ -43,6 +43,8 @@ map <leader>vq :VimuxCloseRunner<CR>
 map <leader>sb :VimuxPromptCommand("swift build")<CR>
 map <leader>sr :VimuxPromptCommand("swift run")<CR>
 map <leader>st :VimuxPromptCommand("swift test")<CR>
+map <leader>sc :VimuxPromptCommand("swift package clean")<CR>
+map <leader>sct :VimuxPromptCommand("swift package clean && swift test")<CR>
 
 inoremap <C-c> <ESC>
 ]])
