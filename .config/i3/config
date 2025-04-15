@@ -192,5 +192,9 @@ exec --no-startup-id i3-msg 'workspace 2; exec ghostty'
 # Set random wallpaper
 exec --no-startup-id nitrogen --set-zoom-fill ~/Pictures --random
 
+# Set keyboard layouts (US English, German) and toggle key
+# First remove existing layout switch shortcut with passing ''
+exec_always setxkbmap -layout us,de,tr -option '' -option grp:win_space_toggle
+
 # Deferred launch to work around some executables to become ready
 exec_always --no-startup-id ~/.config/i3/i3-deferred-launch-config.sh
