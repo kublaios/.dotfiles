@@ -59,8 +59,8 @@ vim.keymap.set("n", "<C-k>", function() harpoon:list():select(3) end)
 vim.keymap.set("n", "<C-l>", function() harpoon:list():select(4) end)
 vim.keymap.set("n", "<C-y>", function() harpoon:list():select(5) end)
 -- Toggle previous & next buffers stored within Harpoon list
-vim.keymap.set("n", "<C-[>", function() harpoon:list():prev() end)
-vim.keymap.set("n", "<C-]>", function() harpoon:list():next() end)
+vim.keymap.set("n", "<C-z>", function() harpoon:list():prev() end)
+vim.keymap.set("n", "<C-x>", function() harpoon:list():next() end)
 
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
 
