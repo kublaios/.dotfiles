@@ -5,14 +5,14 @@
             "complex_modifications": {
                 "rules": [
                     {
-                        "description": "keypad_fn to cmd+shift_space",
+                        "description": "keypad_fn to hyper",
                         "manipulators": [
                             {
                                 "from": { "key_code": "fn" },
                                 "to": [
                                     {
-                                        "key_code": "spacebar",
-                                        "modifiers": ["left_command", "left_shift"]
+                                        "key_code": "left_shift",
+                                        "modifiers": ["left_command", "left_control", "left_option"]
                                     }
                                 ],
                                 "type": "basic"
