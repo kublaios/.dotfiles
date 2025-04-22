@@ -63,6 +63,8 @@ vim.keymap.set("n", "<C-z>", function() harpoon:list():prev() end)
 vim.keymap.set("n", "<C-x>", function() harpoon:list():next() end)
 
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
+-- https://code.visualstudio.com/docs/copilot/language-models#_choose-the-right-model-for-your-task
+vim.g.copilot_settings = { selectedCompletionModel = 'claude-3.7-sonnet' }
 
 vim.cmd([[
 " Pathogen
