@@ -30,6 +30,8 @@ nnoremap <leader>fG :execute 'Telescope live_grep default_text=' . expand('<cwor
 nnoremap <leader>ff <cmd>Telescope git_files<cr>
 nnoremap <leader>fF :execute 'Telescope find_files default_text=' . expand('<cword>')<cr>
 
+nnoremap <silent> <leader>gg :LazyGit<CR>
+
 " Prompt for a command to run map
 map <leader>vc :VimuxPromptCommand<CR>
 " Run last command executed by VimuxRunCommand

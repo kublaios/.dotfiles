@@ -15,6 +15,7 @@ return require('packer').startup(function()
   use 'nvim-tree/nvim-web-devicons' -- which-key dependency
   use 'folke/flash.nvim'
   use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
+  use {'kdheepak/lazygit.nvim', requires = {'nvim-lua/plenary.nvim'}}
   use {
     "ThePrimeagen/harpoon",
     branch = "harpoon2",
