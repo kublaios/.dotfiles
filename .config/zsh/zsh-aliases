@@ -69,3 +69,6 @@ alias ll=lazygit
 
 # fzf with bat
 alias ff='vim $(fzf --preview "bat --color=always --style=numbers --line-range=:500 {}")'
+
+# greenclip history
+alias gc="greenclip print | grep . | dmenu -i -l 10 -p clipboard | xargs -r -d'\n' -I '{}' greenclip print '{}'"
