@@ -74,7 +74,7 @@ cask "ghostty"
 cask "karabiner-elements"
 # File system integration
 cask "macfuse"
-cask "mouseless"
+cask "mouseless@preview"
 # Re-mounts write-protected NTFS volumes
 cask "mounty"
 cask "obsidian"
