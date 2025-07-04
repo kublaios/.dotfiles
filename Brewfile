@@ -65,6 +65,7 @@ brew "zoxide"
 
 # Spotlight killer
 cask "raycast"
+cask "ccleaner"
 # Xcode extension for Github Copilot
 cask "copilot-for-xcode"
 cask "font-bitstream-vera-sans-mono-nerd-font"
