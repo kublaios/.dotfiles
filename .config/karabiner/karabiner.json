@@ -5,6 +5,17 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "button1 to button2 (mouse)",
+                        "enabled": false,
+                        "manipulators": [
+                            {
+                                "from": { "pointing_button": "button1" },
+                                "to": [{ "pointing_button": "button2" }],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "keypad_fn to hyper",
                         "manipulators": [
                             {
@@ -102,15 +113,14 @@
                         ]
                     },
                     {
-                        "description": "keypad_1 to ctrl+up",
-                        "enabled": false,
+                        "description": "f13 to cmd+shift+space",
                         "manipulators": [
                             {
-                                "from": { "key_code": "keypad_1" },
+                                "from": { "key_code": "f13" },
                                 "to": [
                                     {
-                                        "key_code": "up_arrow",
-                                        "modifiers": ["left_control"]
+                                        "key_code": "spacebar",
+                                        "modifiers": ["left_command", "left_shift"]
                                     }
                                 ],
                                 "type": "basic"
@@ -273,10 +283,6 @@
                         {
                             "from": { "key_code": "non_us_backslash" },
                             "to": [{ "key_code": "grave_accent_and_tilde" }]
-                        },
-                        {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "right_control" }]
                         }
                     ]
                 },
@@ -591,8 +597,12 @@
                     "mouse_flip_vertical_wheel": true,
                     "simple_modifications": [
                         {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "right_control" }]
+                            "from": { "key_code": "delete_forward" },
+                            "to": [{ "key_code": "fn" }]
+                        },
+                        {
+                            "from": { "key_code": "non_us_backslash" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
                         }
                     ]
                 },
@@ -641,10 +651,6 @@
                     "ignore": false,
                     "simple_modifications": [
                         {
-                            "from": { "pointing_button": "button1" },
-                            "to": [{ "pointing_button": "button2" }]
-                        },
-                        {
                             "from": { "pointing_button": "button2" },
                             "to": [{ "pointing_button": "button1" }]
                         }
@@ -666,6 +672,22 @@
                         "vendor_id": 13364
                     },
                     "ignore": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 50489,
+                        "vendor_id": 1133
+                    },
+                    "manipulate_caps_lock_led": false
+                },
+                {
+                    "identifiers": {
+                        "is_pointing_device": true,
+                        "product_id": 50489,
+                        "vendor_id": 1133
+                    },
+                    "ignore": false
                 }
             ],
             "fn_function_keys": [
@@ -680,6 +702,10 @@
                 {
                     "from": { "key_code": "f6" },
                     "to": [{ "key_code": "illumination_increment" }]
+                },
+                {
+                    "from": { "key_code": "f7" },
+                    "to": [{ "key_code": "f5" }]
                 },
                 {
                     "from": { "key_code": "f9" },
