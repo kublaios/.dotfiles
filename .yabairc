@@ -122,5 +122,6 @@ yabai -m rule --add app="^WhatsApp.*$" manage=off
 yabai -m rule --add app="^PS Remote Play.*$" manage=off
 yabai -m rule --add app="^NVIDIA GeForce NOW.*$" manage=off
 yabai -m rule --add app="^Postman.*$" manage=off
+yabai -m rule --add app="^CCleaner.*$" manage=off
 
 echo "~~yabai configuration loaded~~"
