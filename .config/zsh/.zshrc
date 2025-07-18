@@ -22,7 +22,6 @@ if [[ "$(uname)" == "Linux" ]]; then
   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 fi
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/.rbenv/bin:$PATH"
 
 # Golang environment variables
 export GOPATH=$HOME/go
@@ -80,7 +79,6 @@ bindkey '^[[Z' complete-word # shift-tab
 bindkey '^ ' complete-word # ctrl-space
 bindkey '^I' autosuggest-accept # tab
 
-eval "$(rbenv init - zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # GPG fix for 'signing failed: Inappropriate ioctl for device'
