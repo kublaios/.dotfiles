@@ -79,6 +79,7 @@ bindkey '^[[Z' complete-word # shift-tab
 bindkey '^ ' complete-word # ctrl-space
 bindkey '^I' autosuggest-accept # tab
 
+source $HOME/.rvm/scripts/rvm
 eval "$(zoxide init --cmd cd zsh)"
 
 # GPG fix for 'signing failed: Inappropriate ioctl for device'
