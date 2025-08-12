@@ -49,4 +49,5 @@ map <leader>sc :VimuxPromptCommand("swift package clean")<CR>
 map <leader>sct :VimuxPromptCommand("swift package clean && swift test")<CR>
 
 inoremap <C-c> <ESC>
+imap jj <Esc>
 ]])
