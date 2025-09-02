@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+# dmenu_history - dmenu wrapper with history support ordered by recency
+# History file location
+HISTFILE="${XDG_CACHE_HOME:-$HOME/.cache}/dmenu_history"
+MAXHISTORY=100
+
+# Create history file if it doesn't exist
+[ ! -f "$HISTFILE" ] && touch "$HISTFILE"
+
+# Get all executables from PATH
+get_commands() {
+    IFS=:
+    for dir in $PATH; do
+        [ -d "$dir" ] && ls -1 "$dir" 2>/dev/null
+    done | sort -u
+}
+
+# Get history (most recent first) and combine with all commands
+# History entries appear first, then other commands
+{
+    tac "$HISTFILE" | awk '!seen[$0]++'  # Reverse history, remove duplicates
+    get_commands | grep -vxFf "$HISTFILE"  # Commands not in history
+} | dmenu "$@" | {
+    read -r cmd
+    [ -n "$cmd" ] || exit 1
+    
+    # Remove command from history if it exists
+    grep -vx "$cmd" "$HISTFILE" > "$HISTFILE.tmp"
+    
+    # Add command to the end of history (most recent)
+    echo "$cmd" >> "$HISTFILE.tmp"
+    
+    # Keep only last MAXHISTORY entries
+    tail -n "$MAXHISTORY" "$HISTFILE.tmp" > "$HISTFILE"
+    rm "$HISTFILE.tmp"
+    
+    # Execute the command
+    echo "$cmd"
+    exec $cmd
+}
