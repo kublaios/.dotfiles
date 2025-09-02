@@ -5,3 +5,6 @@ export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+# Swift version manager
+. $HOME/.local/share/swiftly/env.sh

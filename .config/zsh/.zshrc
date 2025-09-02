@@ -23,7 +23,6 @@ if [[ "$(uname)" == "Linux" ]]; then
 fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
-export PATH="$HOME/.cargo/bin:$PATH"
 
 # Golang environment variables
 export GOPATH=$HOME/go
