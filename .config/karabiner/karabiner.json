@@ -551,11 +551,11 @@
                     "simple_modifications": [
                         {
                             "from": { "pointing_button": "button4" },
-                            "to": [{ "key_code": "vk_none" }]
+                            "to": [{ "key_code": "return_or_enter" }]
                         },
                         {
                             "from": { "pointing_button": "button5" },
-                            "to": [{ "key_code": "vk_none" }]
+                            "to": [{ "key_code": "escape" }]
                         }
                     ]
                 },
