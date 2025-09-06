@@ -189,6 +189,12 @@ bar {
 exec --no-startup-id i3-msg 'exec zen'
 exec --no-startup-id i3-msg 'workspace 2; exec ghostty'
 
+# Workspace assignments
+assign [class="zen"] $ws1
+assign [class="ghostty"] $ws2
+assign [class="code"] $ws4
+assign [class="obsidian"] $ws6
+
 # Set random wallpaper
 exec --no-startup-id nitrogen --set-zoom-fill ~/Pictures --random
 
