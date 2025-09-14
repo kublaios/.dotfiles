@@ -209,7 +209,7 @@ run = ['move-node-to-workspace 6']
 
 [[on-window-detected]]
 if.app-id ='md.obsidian'
-run = ['move-node-to-workspace 7']
+run = ['move-node-to-workspace 6']
 
 [[on-window-detected]]
 if.app-id ='com.postmanlabs.mac'
