@@ -108,3 +108,6 @@ if [[ "$(uname)" == "Linux" ]]; then
         greenclip daemon &>/dev/null &!
     fi
 fi
+
+# Integrate with VSCode terminal if applicable
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
