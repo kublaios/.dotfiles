@@ -196,16 +196,16 @@ if.app-id ='com.microsoft.VSCode'
 run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]
-if.app-id ='com.tinyspeck.slackmacgap'
-run = ['move-node-to-workspace 5']
-
-[[on-window-detected]]
 if.app-id ='com.brave.Browser.app.adcclpceapdbhchilkbngkehpppaefko'
-run = ['move-node-to-workspace 6']
+run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]
 if.app-id ='com.brave.Browser'
-run = ['move-node-to-workspace 6']
+run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
+if.app-id ='com.tinyspeck.slackmacgap'
+run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
 if.app-id ='md.obsidian'
