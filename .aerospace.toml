@@ -260,3 +260,15 @@ run = 'layout floating'
 [[on-window-detected]]
 if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Notes'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Reminders'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Maps'
+run = 'layout floating'
