@@ -78,5 +78,5 @@ cask "qlmarkdown"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
 # Install and switch between multiple versions of Xcode
-cask "xcodes"
-cask "zen-browser"
+cask "xcodes-app"
+cask "zen"
