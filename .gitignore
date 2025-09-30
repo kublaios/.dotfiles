@@ -10,3 +10,4 @@ Brewfile.lock.json
 .config/zed/prompts
 .config/zed/.tmp*
 .gitconfig.local
+.config/zsh/zsh-exports-local
