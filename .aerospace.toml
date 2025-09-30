@@ -193,10 +193,14 @@ run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id ='com.brave.Browser.app.adcclpceapdbhchilkbngkehpppaefko'
-run = ['move-node-to-workspace 4']
+run = ['move-node-to-workspace 1']
 
 [[on-window-detected]]
 if.app-id ='com.brave.Browser'
+run = ['move-node-to-workspace 1']
+
+[[on-window-detected]]
+if.app-id ='com.microsoft.VSCode'
 run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]
@@ -205,10 +209,6 @@ run = ['move-node-to-workspace 5']
 
 [[on-window-detected]]
 if.app-id ='md.obsidian'
-run = ['move-node-to-workspace 5']
-
-[[on-window-detected]]
-if.app-id ='com.microsoft.VSCode'
 run = ['move-node-to-workspace 6']
 
 [[on-window-detected]]
