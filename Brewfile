@@ -5,7 +5,7 @@ tap "homebrew/services"
 tap "jesseduffield/lazygit"
 
 brew "bat"
-# Get a file from an HTTP, HTTPS or FTP server
+brew "codex"
 brew "curl"
 # Telescope live_grep
 brew "fzf"
