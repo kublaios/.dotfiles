@@ -174,141 +174,64 @@ automatically-unhide-macos-hidden-apps = true
     8 = 'secondary'
     9 = 'secondary'
 
-# Default space
+# Make all windows float by default
+
+[[on-window-detected]]
+    check-further-callbacks = true
+    run = 'layout floating'
+
+# Tiling windows with workspace assignments
+
 [[on-window-detected]]
 if.app-id ='app.zen-browser.zen'
-run = ['move-node-to-workspace 1']
+run = ['layout tiling', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
 if.app-id ='com.apple.Terminal'
-run = ['move-node-to-workspace 1']
+run = ['layout tiling', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id ='com.mitchellh.ghostty'
-run = ['move-node-to-workspace 2']
+run = ['layout tiling', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id ='com.apple.dt.Xcode'
-run = ['move-node-to-workspace 3']
+run = ['layout tiling', 'move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id ='com.microsoft.VSCode'
-run = ['move-node-to-workspace 4']
-
-[[on-window-detected]]
-if.app-id ='com.brave.Browser.app.adcclpceapdbhchilkbngkehpppaefko'
-run = ['move-node-to-workspace 4']
+run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
 if.app-id ='com.brave.Browser'
-run = ['move-node-to-workspace 4']
+run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
 if.app-id ='com.tinyspeck.slackmacgap'
-run = ['move-node-to-workspace 5']
+run = ['layout tiling', 'move-node-to-workspace 5']
 
 [[on-window-detected]]
 if.app-id ='md.obsidian'
-run = ['move-node-to-workspace 6']
+run = ['layout tiling', 'move-node-to-workspace 6']
+
+[[on-window-detected]]
+if.app-id ='com.proxyman.NSProxy'
+run = ['layout tiling', 'move-node-to-workspace 7']
 
 [[on-window-detected]]
 if.app-id ='com.postmanlabs.mac'
-run = ['move-node-to-workspace 8']
+run = ['layout tiling', 'move-node-to-workspace 8']
+
+# Workspace assignments
+
+[[on-window-detected]]
+if.app-id ='com.apple.iphonesimulator'
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id ='com.spotify.client'
 run = ['move-node-to-workspace 9']
 
-# Floating windows
-
-[[on-window-detected]]
-if.app-id ='com.apple.iphonesimulator'
-run = ['layout floating', 'move-node-to-workspace 3']
-
-[[on-window-detected]]
-if.app-id ='com.proxyman.NSProxy'
-run = ['layout floating', 'move-node-to-workspace 7']
-
 [[on-window-detected]]
 if.app-id ='com.tdesktop.Telegram'
-run = ['layout floating', 'move-node-to-workspace 9']
-
-[[on-window-detected]]
-if.app-id = 'com.apple.finder'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.QuickTimePlayerX'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.github.CopilotForXcode'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'net.sonuscape.mouseless'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Passwords'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'org.pqrs.Karabiner-EventViewer'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'org.pqrs.Karabiner-Elements.Settings'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Notes'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Reminders'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Maps'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Preview'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Photos'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.TextEdit'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.Preview'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.logi.ghub.agent'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.apple.UserNotificationCenter'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.github.CopilotForXcode.ExtensionService'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.raycast.macos'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'pro.betterdisplay.BetterDisplay'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-id = 'com.safervpn.osx.smb'
-run = 'layout floating'
+run = ['move-node-to-workspace 9']
