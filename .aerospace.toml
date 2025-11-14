@@ -192,15 +192,15 @@ if.app-id ='com.apple.dt.Xcode'
 run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
+if.app-id ='com.microsoft.VSCode'
+run = ['move-node-to-workspace 4']
+
+[[on-window-detected]]
 if.app-id ='com.brave.Browser.app.adcclpceapdbhchilkbngkehpppaefko'
-run = ['move-node-to-workspace 1']
+run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]
 if.app-id ='com.brave.Browser'
-run = ['move-node-to-workspace 1']
-
-[[on-window-detected]]
-if.app-id ='com.microsoft.VSCode'
 run = ['move-node-to-workspace 4']
 
 [[on-window-detected]]
@@ -271,4 +271,44 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'com.apple.Maps'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Preview'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Photos'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.TextEdit'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.Preview'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.logi.ghub.agent'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.apple.UserNotificationCenter'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.github.CopilotForXcode.ExtensionService'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.raycast.macos'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'pro.betterdisplay.BetterDisplay'
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.safervpn.osx.smb'
 run = 'layout floating'
