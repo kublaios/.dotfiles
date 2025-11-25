@@ -5,7 +5,6 @@ tap "homebrew/services"
 tap "jesseduffield/lazygit"
 
 brew "bat"
-brew "codex"
 brew "curl"
 # Telescope live_grep
 brew "fzf"
