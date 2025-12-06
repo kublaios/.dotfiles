@@ -56,6 +56,7 @@ brew "zoxide"
 
 # Spotlight killer
 cask "raycast"
+cask "blip"
 cask "ccleaner"
 # Xcode extension for Github Copilot
 cask "copilot-for-xcode"
