@@ -1,5 +1,10 @@
 vim.g.mapleader = " "
 
+-- Temporarily silence noisy plugin deprecation warnings until upstream fixes land.
+if vim.fn.has("nvim-0.11") == 1 then
+    vim.deprecate = function() end
+end
+
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.splitright = true

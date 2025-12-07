@@ -26,8 +26,7 @@ return require('packer').startup(function()
     event = { "BufReadPre", "BufNewFile" },
     config = function()
       -- Ref: https://www.swift.org/documentation/articles/zero-to-swift-nvim.html
-      local lsp = require('lspconfig')
-      lsp.sourcekit.setup({
+      vim.lsp.config('sourcekit', {
         capabilities = {
           workspace = {
             didChangeWatchedFiles = {
@@ -36,6 +35,7 @@ return require('packer').startup(function()
           },
         },
       })
+      vim.lsp.enable('sourcekit')
     end
   }
   use {
