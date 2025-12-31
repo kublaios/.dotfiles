@@ -41,26 +41,6 @@ alias mach_java_mode="export SDKMAN_DIR="$HOME/.sdkman" && [[ -s "$HOME/.sdkman/
 # always list with -la
 alias ls='ls -la'
 
-# LM Studio CLI
-alias lms='~/.cache/lm-studio/bin/lms'
-
-# GitHub Copilot CLI aliases
-# Define functions
-function gh_copilot_shell_suggest {
-    gh copilot suggest -t shell "$1"
-}
-function gh_copilot_gh_suggest {
-    gh copilot suggest -t gh "$1"
-}
-function gh_copilot_git_suggest {
-    gh copilot suggest -t git "$1"
-}
-
-# Set aliases
-alias '??'=gh_copilot_shell_suggest
-alias 'gh?'=gh_copilot_gh_suggest
-alias 'git?'=gh_copilot_git_suggest
-
 # clipboard history
 alias cc=fzf-clipboard
 
