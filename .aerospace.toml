@@ -187,10 +187,6 @@ if.app-id ='app.zen-browser.zen'
 run = ['layout tiling', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
-if.app-id ='com.apple.Terminal'
-run = ['layout tiling', 'move-node-to-workspace 2']
-
-[[on-window-detected]]
 if.app-id ='com.mitchellh.ghostty'
 run = ['layout tiling', 'move-node-to-workspace 2']
 
@@ -203,7 +199,7 @@ if.app-id ='com.microsoft.VSCode'
 run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
-if.app-id ='com.brave.Browser'
+if.app-id ='com.openai.codex'
 run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
@@ -219,10 +215,18 @@ if.app-id ='com.proxyman.NSProxy'
 run = ['layout tiling', 'move-node-to-workspace 7']
 
 [[on-window-detected]]
+if.app-id ='md.obsidian'
+run = ['layout tiling', 'move-node-to-workspace 8']
+
+[[on-window-detected]]
 if.app-id ='com.postmanlabs.mac'
 run = ['layout tiling', 'move-node-to-workspace 8']
 
 # Workspace assignments
+
+[[on-window-detected]]
+if.app-id ='com.apple.Terminal'
+run = ['move-node-to-workspace 2']
 
 [[on-window-detected]]
 if.app-id ='com.apple.iphonesimulator'

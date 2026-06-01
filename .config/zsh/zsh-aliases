@@ -3,6 +3,9 @@ alias vim="nvim"
 alias vi="nvim"
 alias vv="nvim ."
 
+# faster find
+alias find="fd"
+
 #!/bin/sh
 alias zsh-update-plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I {} -0 git -C {} pull -q"
 alias nvimrc='nvim ~/.config/nvim/'
@@ -52,3 +55,6 @@ alias ff='vim $(fzf --preview "bat --color=always --style=numbers --line-range=:
 
 # greenclip history
 alias gc="greenclip print | grep . | dmenu -i -l 10 -p clipboard | xargs -r -d'\n' -I '{}' greenclip print '{}'"
+
+# tmux
+alias tmux-main="tmux switch-client -t main"

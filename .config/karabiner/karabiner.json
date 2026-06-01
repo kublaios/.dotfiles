@@ -5,6 +5,58 @@
             "complex_modifications": {
                 "rules": [
                     {
+                        "description": "Left control+w to alt+backspace",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "w",
+                                    "modifiers": { "mandatory": ["left_control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "delete_or_backspace",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Left control+j to shift+enter",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "^com\\.mitchellh\\.ghostty$"
+                                        ],
+                                        "type": "frontmost_application_unless"
+                                    }
+                                ],
+                                "from": {
+                                    "key_code": "j",
+                                    "modifiers": { "mandatory": ["left_control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "return_or_enter",
+                                        "modifiers": ["left_shift"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "application to hyper",
                         "enabled": false,
                         "manipulators": [
@@ -33,6 +85,7 @@
                     },
                     {
                         "description": "keypad_fn to hyper",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "fn" },
@@ -145,7 +198,6 @@
                     },
                     {
                         "description": "keypad_2 to ctrl+shift+left",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_2" },
@@ -161,7 +213,6 @@
                     },
                     {
                         "description": "keypad_3 to ctrl+shift+right",
-                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_3" },
@@ -572,20 +623,20 @@
                             "to": [{ "key_code": "left_option" }]
                         },
                         {
-                            "from": { "key_code": "left_control" },
-                            "to": [{ "key_code": "right_option" }]
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "left_option" }]
                         },
                         {
-                            "from": { "key_code": "right_option" },
-                            "to": [{ "key_code": "right_command" }]
+                            "from": { "key_code": "left_control" },
+                            "to": [{ "key_code": "right_option" }]
                         },
                         {
                             "from": { "key_code": "left_option" },
                             "to": [{ "key_code": "left_command" }]
                         },
                         {
-                            "from": { "key_code": "left_command" },
-                            "to": [{ "key_code": "left_option" }]
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "right_command" }]
                         }
                     ],
                     "treat_as_built_in_keyboard": true
@@ -686,7 +737,6 @@
                     "ignore": false
                 },
                 {
-                    "disable_built_in_keyboard_if_exists": true,
                     "identifiers": {
                         "is_keyboard": true,
                         "is_pointing_device": true,
@@ -701,6 +751,7 @@
                         "product_id": 50489,
                         "vendor_id": 1133
                     },
+                    "ignore": true,
                     "manipulate_caps_lock_led": false
                 },
                 {
@@ -709,7 +760,35 @@
                         "product_id": 50489,
                         "vendor_id": 1133
                     },
-                    "ignore": false
+                    "ignore_vendor_events": true
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 45092,
+                        "vendor_id": 1133
+                    },
+                    "ignore": false,
+                    "ignore_vendor_events": true,
+                    "manipulate_caps_lock_led": false
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "product_id": 50504,
+                        "vendor_id": 1133
+                    },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "left_command" },
+                            "to": [{ "key_code": "left_option" }]
+                        },
+                        {
+                            "from": { "key_code": "left_option" },
+                            "to": [{ "key_code": "left_command" }]
+                        }
+                    ]
                 }
             ],
             "fn_function_keys": [

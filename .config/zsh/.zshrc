@@ -6,6 +6,7 @@ setopt nomatch
 
 if [[ "$(uname)" == "Darwin" ]]; then
   # Homebrew
+  export HOMEBREW_NO_REQUIRE_TAP_TRUST=1
   export PATH="/opt/homebrew/bin:$PATH"
   export PATH="/opt/homebrew/sbin:$PATH"
   # Golang environment variables
@@ -94,12 +95,17 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# Launch tmux if not already running
+# Launch tmux if not already running and terminal is Ghostty or TERM_PROGRAM is empty
 if [ -z "$TMUX" ]; then
     # Check if tmux is installed
     if command -v tmux &> /dev/null; then
-        # Attempt to attach to existing session, or create new one
-        exec tmux new-session -A -s main
+        if [ "${TERM_PROGRAM:-}" = "ghostty" ]; then
+            # Attempt to attach to existing session, or create new one
+            exec tmux new-session -A -s main
+        elif [ -z "${TERM_PROGRAM:-}" ]; then
+            # Start a fresh session with a unique name (do not attach to existing)
+            exec tmux new-session -s "main-$((RANDOM % 100))"
+        fi
     fi
 fi
 if [[ "$(uname)" == "Linux" ]]; then
