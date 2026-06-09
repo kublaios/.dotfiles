@@ -57,7 +57,7 @@ brew "zoxide"
 # Spotlight killer
 cask "raycast"
 cask "blip"
-cask "ccleaner"
+cask "codex-app"
 # Xcode extension for Github Copilot
 cask "copilot-for-xcode"
 cask "font-bitstream-vera-sans-mono-nerd-font"
@@ -77,6 +77,8 @@ cask "obsidian"
 cask "qlmarkdown"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
+# Lightweight CSV editor
+cask "tablecruncher"
 # Install and switch between multiple versions of Xcode
 cask "xcodes-app"
 cask "zen"
