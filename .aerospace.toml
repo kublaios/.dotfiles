@@ -141,7 +141,7 @@ automatically-unhide-macos-hidden-apps = true
     # See: https://nikitabobko.github.io/AeroSpace/commands#mode
     alt-shift-semicolon = 'mode service'
 
-    alt-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
+    ctrl-alt-f = ['layout floating tiling', 'mode main'] # Toggle between floating and tiling layout
 
 # 'service' binding mode declaration.
 # See: https://nikitabobko.github.io/AeroSpace/guide#binding-modes
@@ -216,6 +216,10 @@ run = ['layout tiling', 'move-node-to-workspace 7']
 
 [[on-window-detected]]
 if.app-id ='md.obsidian'
+run = ['layout tiling', 'move-node-to-workspace 8']
+
+[[on-window-detected]]
+if.app-id ='org.yanex.marta'
 run = ['layout tiling', 'move-node-to-workspace 8']
 
 [[on-window-detected]]

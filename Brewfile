@@ -66,6 +66,8 @@ cask "ghostty"
 cask "karabiner-elements"
 # File system integration
 cask "macfuse"
+# File manager
+cask "marta"
 cask "mouseless@preview"
 # Re-mounts write-protected NTFS volumes
 cask "mounty"
