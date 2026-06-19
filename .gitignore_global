@@ -1,2 +1,4 @@
 .DS_Store
 timeline.xctimeline
+
+**/.claude/settings.local.json
