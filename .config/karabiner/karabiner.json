@@ -31,7 +31,7 @@
                         ]
                     },
                     {
-                        "description": "Left control+j to shift+enter",
+                        "description": "Left control+j to alt+enter",
                         "manipulators": [
                             {
                                 "conditions": [
@@ -49,7 +49,7 @@
                                 "to": [
                                     {
                                         "key_code": "return_or_enter",
-                                        "modifiers": ["left_shift"]
+                                        "modifiers": ["left_option"]
                                     }
                                 ],
                                 "type": "basic"
