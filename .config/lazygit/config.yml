@@ -1,2 +1,4 @@
 os:
   editPreset: 'vi'
+git:
+  overrideGpg: true
