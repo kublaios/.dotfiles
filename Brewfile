@@ -56,6 +56,7 @@ brew "zoxide"
 
 # Spotlight killer
 cask "raycast"
+cask "slack"
 cask "blip"
 cask "claude"
 cask "codex"
