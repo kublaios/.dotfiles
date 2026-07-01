@@ -48,9 +48,7 @@ brew "shared-mime-info"
 brew "stow"
 brew "swiftlint"
 brew "telnet"
-# Pinned to 3.6b: tmux 3.7+ breaks lazygit rendering inside tmux (blank panel).
-# See lazygit#5703. Formula lives in the chainbreaker/local tap.
-brew "chainbreaker/local/tmux@3.6b"
+brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
