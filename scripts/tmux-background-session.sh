@@ -20,7 +20,6 @@ if tmux has-session -t __bg 2>/dev/null; then
   exit 1
 fi
 
-tmux rename-session -t "$current_session" __bg
 new_session="$(tmux new-session -d -P -F '#{session_name}' -c "$current_path")"
 
 if [[ -z "$new_session" ]]; then
@@ -28,4 +27,5 @@ if [[ -z "$new_session" ]]; then
   exit 1
 fi
 
-tmux switch-client -t "$new_session"
+tmux rename-session -t "$new_session" __bg
+tmux switch-client -t __bg
