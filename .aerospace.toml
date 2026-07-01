@@ -223,6 +223,10 @@ if.app-id ='com.anthropic.claudefordesktop'
 run = ['layout tiling', 'move-node-to-workspace 7']
 
 [[on-window-detected]]
+if.app-id ='com.github.githubapp'
+run = ['layout tiling', 'move-node-to-workspace 7']
+
+[[on-window-detected]]
 if.app-id ='md.obsidian'
 run = ['layout tiling', 'move-node-to-workspace 8']
 
