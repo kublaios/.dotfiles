@@ -7,6 +7,7 @@ brew "curl"
 # Telescope live_grep
 brew "fzf"
 brew "git"
+brew "gh"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
@@ -47,7 +48,9 @@ brew "shared-mime-info"
 brew "stow"
 brew "swiftlint"
 brew "telnet"
-brew "tmux"
+# Pinned to 3.6b: tmux 3.7+ breaks lazygit rendering inside tmux (blank panel).
+# See lazygit#5703. Formula lives in the chainbreaker/local tap.
+brew "chainbreaker/local/tmux@3.6b"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
 # Internet file retriever
@@ -56,6 +59,7 @@ brew "zoxide"
 
 # Spotlight killer
 cask "raycast"
+# Airdrop killer
 cask "blip"
 cask "claude"
 cask "codex"
