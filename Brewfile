@@ -7,6 +7,7 @@ brew "curl"
 # Telescope live_grep
 brew "fzf"
 brew "git"
+brew "gh"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
@@ -57,6 +58,7 @@ brew "zoxide"
 # Spotlight killer
 cask "raycast"
 cask "slack"
+# Airdrop killer
 cask "blip"
 cask "claude"
 cask "codex"
