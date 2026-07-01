@@ -61,7 +61,6 @@ cask "claude"
 cask "codex"
 cask "codex-app"
 # Xcode extension for Github Copilot
-cask "copilot-cli"
 cask "copilot-for-xcode"
 cask "font-bitstream-vera-sans-mono-nerd-font"
 cask "ghostty"
