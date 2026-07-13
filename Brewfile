@@ -81,6 +81,7 @@ cask "obsidian"
 cask "qlmarkdown"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
+cask "readdle-spark"
 # Lightweight CSV editor
 cask "tablecruncher"
 # Install and switch between multiple versions of Xcode
