@@ -8,6 +8,8 @@ brew "curl"
 brew "fzf"
 brew "git"
 brew "gh"
+# Lightweight and flexible command-line JSON processor
+brew "jq"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
@@ -31,6 +33,8 @@ brew "netpbm"
 brew "neovim"
 brew "node"
 brew "npm"
+# IMAP mail sync (newsletter-digest)
+brew "offlineimap"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 brew "python"
@@ -59,7 +63,7 @@ brew "zoxide"
 cask "raycast"
 # Airdrop killer
 cask "blip"
-cask "claude"
+cask "claude-code"
 cask "codex"
 cask "codex-app"
 # Xcode extension for Github Copilot
@@ -68,6 +72,7 @@ cask "font-bitstream-vera-sans-mono-nerd-font"
 cask "ghostty"
 # Keyboard customizer
 cask "karabiner-elements"
+cask "lm-studio"
 # File system integration
 cask "macfuse"
 # File manager
@@ -87,4 +92,3 @@ cask "tablecruncher"
 # Install and switch between multiple versions of Xcode
 cask "wispr-flow"
 cask "xcodes-app"
-cask "zen"
