@@ -245,6 +245,16 @@ run = ['layout tiling', 'move-node-to-workspace 8']
 if.app-id ='com.postmanlabs.mac'
 run = ['layout tiling', 'move-node-to-workspace 8']
 
+# Tiling windows without workspace assignments
+
+[[on-window-detected]]
+if.app-id ='com.github.marktext.marktext'
+run = ['layout tiling']
+
+[[on-window-detected]]
+if.app-id ='com.termius.mac'
+run = ['layout tiling']
+
 # Workspace assignments
 
 [[on-window-detected]]
