@@ -67,7 +67,6 @@ cask "codex-app"
 cask "copilot-cli"
 cask "copilot-for-xcode"
 cask "font-bitstream-vera-sans-mono-nerd-font"
-cask "ghostty"
 # Keyboard customizer
 cask "karabiner-elements"
 # File system integration
@@ -85,6 +84,7 @@ cask "qlmarkdown"
 cask "quicklook-json"
 # Lightweight CSV editor
 cask "tablecruncher"
+cask "wezterm"
 # Install and switch between multiple versions of Xcode
 cask "wispr-flow"
 cask "xcodes-app"
