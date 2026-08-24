@@ -1,6 +1,13 @@
 # Place a copy of this config to ~/.aerospace.toml
 # After that, you can edit ~/.aerospace.toml to your liking
 
+# See: https://nikitabobko.github.io/AeroSpace/guide#config-version
+config-version = 2
+
+# Workspaces that are always alive, even when empty.
+# See: https://nikitabobko.github.io/AeroSpace/guide#persistent-workspaces
+persistent-workspaces = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+
 # You can use it to add commands that run after AeroSpace startup.
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = []
@@ -183,11 +190,11 @@ automatically-unhide-macos-hidden-apps = true
 # Tiling windows with workspace assignments
 
 [[on-window-detected]]
-if.app-id ='app.zen-browser.zen'
+if.app-id ='com.google.Chrome'
 run = ['layout tiling', 'move-node-to-workspace 1']
 
 [[on-window-detected]]
-if.app-id ='com.mitchellh.ghostty'
+if.app-id ='com.github.wez.wezterm'
 run = ['layout tiling', 'move-node-to-workspace 2']
 
 [[on-window-detected]]
@@ -207,7 +214,11 @@ if.app-id ='com.tinyspeck.slackmacgap'
 run = ['layout tiling', 'move-node-to-workspace 5']
 
 [[on-window-detected]]
-if.app-id ='md.obsidian'
+if.app-id = 'com.google.Chrome.app.kjgfgldnnfoeklkmfkjfagphfepbbdan'
+run = ['layout tiling', 'move-node-to-workspace 5']
+
+[[on-window-detected]]
+if.app-id ='app.zen-browser.zen'
 run = ['layout tiling', 'move-node-to-workspace 6']
 
 [[on-window-detected]]
@@ -233,6 +244,16 @@ run = ['layout tiling', 'move-node-to-workspace 8']
 [[on-window-detected]]
 if.app-id ='com.postmanlabs.mac'
 run = ['layout tiling', 'move-node-to-workspace 8']
+
+# Tiling windows without workspace assignments
+
+[[on-window-detected]]
+if.app-id ='com.github.marktext.marktext'
+run = ['layout tiling']
+
+[[on-window-detected]]
+if.app-id ='com.termius.mac'
+run = ['layout tiling']
 
 # Workspace assignments
 

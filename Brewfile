@@ -1,3 +1,4 @@
+tap "abue-ammar/tinycast"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
@@ -7,16 +8,19 @@ brew "curl"
 # Telescope live_grep
 brew "fzf"
 brew "git"
+brew "gh"
 # Generate introspection data for GObject libraries
 brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Clean my Mac
+brew "mole"
+# Simple terminal UI for git commands
+brew "lazygit"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
 # Convert pixel information into colored ASCII art
 brew "libcaca"
-# Simple terminal UI for git commands
-brew "lazygit"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # X.509 and CMS library
@@ -35,13 +39,8 @@ brew "openssl@3"
 brew "python"
 brew "pyvim"
 brew "ripgrep"
-# Simple terminal UI for git commands
-brew "lazygit"
 #Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
-# Rust toolchain installer
-brew "rustup-init"
-brew "ruby-build"
 # Database of common MIME types
 brew "shared-mime-info"
 brew "stow"
@@ -54,22 +53,14 @@ brew "tree"
 brew "wget"
 brew "zoxide"
 
-# Spotlight killer
-cask "raycast"
+# Airdrop killer
 cask "blip"
-cask "claude"
-cask "codex"
-cask "codex-app"
-# Xcode extension for Github Copilot
-cask "copilot-for-xcode"
+cask "chatgpt"
 cask "font-bitstream-vera-sans-mono-nerd-font"
-cask "ghostty"
 # Keyboard customizer
 cask "karabiner-elements"
 # File system integration
 cask "macfuse"
-# File manager
-cask "marta"
 cask "mouseless@preview"
 # Re-mounts write-protected NTFS volumes
 cask "mounty"
@@ -79,8 +70,8 @@ cask "obsidian"
 cask "qlmarkdown"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
-# Lightweight CSV editor
-cask "tablecruncher"
+cask "tinycast"
+cask "wezterm"
 # Install and switch between multiple versions of Xcode
 cask "wispr-flow"
 cask "xcodes-app"
