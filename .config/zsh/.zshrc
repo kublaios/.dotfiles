@@ -120,6 +120,3 @@ fi
 
 # Integrate with VSCode terminal if applicable
 [[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code --locate-shell-integration-path zsh)"
-
-# opencode
-export PATH=/Users/kubilay/.opencode/bin:$PATH
