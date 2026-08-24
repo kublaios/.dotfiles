@@ -11,3 +11,9 @@ Brewfile.lock.json
 .config/zed/.tmp*
 .gitconfig.local
 .config/zsh/zsh-exports-local
+
+# pi coding agent: never track credentials or machine state
+.pi/agent/auth.json
+.pi/agent/models-store.json
+.pi/agent/sessions/
+.pi/agent/npm/
