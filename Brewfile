@@ -56,6 +56,7 @@ brew "zoxide"
 # Airdrop killer
 cask "blip"
 cask "chatgpt"
+cask "codex"
 cask "font-bitstream-vera-sans-mono-nerd-font"
 # Keyboard customizer
 cask "karabiner-elements"
