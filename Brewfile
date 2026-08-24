@@ -1,3 +1,4 @@
+tap "abue-ammar/tinycast"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jesseduffield/lazygit"
@@ -12,12 +13,14 @@ brew "gh"
 brew "gobject-introspection"
 # Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
+# Clean my Mac
+brew "mole"
+# Simple terminal UI for git commands
+brew "lazygit"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
 # Convert pixel information into colored ASCII art
 brew "libcaca"
-# Simple terminal UI for git commands
-brew "lazygit"
 # Library to render SVG files using Cairo
 brew "librsvg"
 # X.509 and CMS library
@@ -36,8 +39,6 @@ brew "openssl@3"
 brew "python"
 brew "pyvim"
 brew "ripgrep"
-# Simple terminal UI for git commands
-brew "lazygit"
 #Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
 # Rust toolchain installer
@@ -55,14 +56,11 @@ brew "tree"
 brew "wget"
 brew "zoxide"
 
-# Spotlight killer
-cask "raycast"
-cask "slack"
 # Airdrop killer
 cask "blip"
 cask "claude"
 cask "codex"
-cask "codex-app"
+cask "chatgpt"
 # Xcode extension for Github Copilot
 cask "copilot-cli"
 cask "copilot-for-xcode"
@@ -82,8 +80,13 @@ cask "obsidian"
 cask "qlmarkdown"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
+# Spotlight killer
+cask "raycast"
+cask "slack"
+cask "stats"
 # Lightweight CSV editor
 cask "tablecruncher"
+cask "tinycast"
 cask "wezterm"
 # Install and switch between multiple versions of Xcode
 cask "wispr-flow"
