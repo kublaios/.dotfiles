@@ -44,9 +44,6 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
-# start a terminal
-bindsym $mod+Return exec ghostty
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -187,11 +184,9 @@ bar {
 
 # Start programs
 exec --no-startup-id i3-msg 'exec zen'
-exec --no-startup-id i3-msg 'workspace 2; exec ghostty'
 
 # Workspace assignments
 assign [class="zen"] $ws1
-assign [class="ghostty"] $ws2
 assign [class="code"] $ws4
 assign [class="obsidian"] $ws6
 

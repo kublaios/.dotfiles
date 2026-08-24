@@ -95,11 +95,11 @@ export LANG=en_US.UTF-8
 export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-# Launch tmux if not already running and terminal is Ghostty/WezTerm or TERM_PROGRAM is empty
+# Launch tmux if not already running and terminal is WezTerm or TERM_PROGRAM is empty
 if [ -z "$TMUX" ]; then
     # Check if tmux is installed
     if command -v tmux &> /dev/null; then
-        if [ "${TERM_PROGRAM:-}" = "ghostty" ] || [ "${TERM_PROGRAM:-}" = "WezTerm" ]; then
+        if [ "${TERM_PROGRAM:-}" = "WezTerm" ]; then
             # Attempt to attach to existing session, or create new one
             exec tmux new-session -A -s main
         elif [ -z "${TERM_PROGRAM:-}" ]; then
@@ -110,7 +110,7 @@ if [ -z "$TMUX" ]; then
 fi
 if [[ "$(uname)" == "Linux" ]]; then
     if command -v i3-msg &> /dev/null; then
-        i3-msg '[class="zen|ghostty"] fullscreen enable' &>/dev/null
+        i3-msg '[class="zen"] fullscreen enable' &>/dev/null
     fi
     # Start greenclip if it's not running
     if ! pgrep -x "greenclip" > /dev/null; then
