@@ -70,6 +70,7 @@ cask "obsidian"
 cask "qlmarkdown"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
+cask "sublime-text"
 cask "tinycast"
 cask "wezterm"
 # Install and switch between multiple versions of Xcode

@@ -202,7 +202,7 @@ if.app-id ='com.apple.dt.Xcode'
 run = ['layout tiling', 'move-node-to-workspace 3']
 
 [[on-window-detected]]
-if.app-id ='com.microsoft.VSCode'
+if.app-id ='com.sublimetext.4'
 run = ['layout tiling', 'move-node-to-workspace 4']
 
 [[on-window-detected]]
