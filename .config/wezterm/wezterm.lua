@@ -11,6 +11,9 @@ config.use_ime = false
 -- this wezterm version doesn't reliably send it, esp. on non-US layouts
 config.keys = {
 	{ key = "phys:Space", mods = "CTRL", action = wezterm.action.SendString("\x00") },
+	-- Karabiner rewrites Ctrl+J to Opt+Enter (newline); unbind WezTerm's
+	-- default Opt+Enter = ToggleFullScreen so it reaches the shell instead
+	{ key = "Enter", mods = "ALT", action = wezterm.action.DisableDefaultAssignment },
 }
 
 return config
