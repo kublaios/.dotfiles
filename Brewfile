@@ -41,9 +41,6 @@ brew "pyvim"
 brew "ripgrep"
 #Graph visualization software from AT&T and Bell Labs
 brew "graphviz"
-# Rust toolchain installer
-brew "rustup-init"
-brew "ruby-build"
 # Database of common MIME types
 brew "shared-mime-info"
 brew "stow"
@@ -58,19 +55,12 @@ brew "zoxide"
 
 # Airdrop killer
 cask "blip"
-cask "claude"
-cask "codex"
 cask "chatgpt"
-# Xcode extension for Github Copilot
-cask "copilot-cli"
-cask "copilot-for-xcode"
 cask "font-bitstream-vera-sans-mono-nerd-font"
 # Keyboard customizer
 cask "karabiner-elements"
 # File system integration
 cask "macfuse"
-# File manager
-cask "marta"
 cask "mouseless@preview"
 # Re-mounts write-protected NTFS volumes
 cask "mounty"
@@ -80,12 +70,6 @@ cask "obsidian"
 cask "qlmarkdown"
 # QuickLook plugin for JSON files
 cask "quicklook-json"
-# Spotlight killer
-cask "raycast"
-cask "slack"
-cask "stats"
-# Lightweight CSV editor
-cask "tablecruncher"
 cask "tinycast"
 cask "wezterm"
 # Install and switch between multiple versions of Xcode
