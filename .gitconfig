@@ -1,8 +1,6 @@
 # This is Git's per-user configuration file.
 [user]
 	name = Kubilay Erdogan
-[include]
-	path = ~/.gitconfig.local
 [core]
 	excludesfile = ~/.gitignore_global
 	attributesfile = ~/.gitattributes
@@ -18,3 +16,5 @@
     defaultBranch = main
 [submodule]
 	recurse = true
+[include]
+	path = ~/.gitconfig.local
