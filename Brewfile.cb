@@ -1,0 +1,19 @@
+# Needed for ntfs-3g-mac
+tap "gromgit/fuse"
+
+# Read-write NTFS driver for FUSE
+brew "ntfs-3g-mac"
+# IMAP mail sync (newsletter-digest)
+brew "offlineimap"
+# Command-line bandwidth test via speedtest.net
+brew "speedtest-cli"
+# Command-line unarchiver supporting multiple formats
+brew "unar"
+# Terminal file manager (Rust, async I/O)
+brew "yazi"
+
+cask "lm-studio"
+# File system integration
+cask "macfuse"
+# Re-mounts write-protected NTFS volumes
+cask "mounty"
