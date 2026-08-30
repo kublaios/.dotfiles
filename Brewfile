@@ -20,6 +20,8 @@ brew "git"
 brew "gh"
 # GNU Privacy Guard (git commit signing)
 brew "gnupg"
+# Pinentry with macOS Keychain support (persists GPG passphrase across reboots)
+brew "pinentry-mac"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Generate introspection data for GObject libraries
