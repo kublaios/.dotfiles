@@ -1,7 +1,3 @@
-tap "homebrew/bundle"
-tap "homebrew/services"
-tap "jesseduffield/lazygit"
-
 brew "bat"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
@@ -69,14 +65,14 @@ cask "codex"
 # Keyboard customizer
 cask "karabiner-elements"
 cask "mouseless@preview"
-cask "nikitabobko/tap/aerospace"
+cask "aerospace"
 # Prevents iTunes/Apple Music from auto-launching
 cask "notunes"
 cask "obsidian"
 # QuickLook generator for Markdown files
 cask "qlmarkdown"
-# QuickLook plugin for JSON files
-cask "quicklook-json"
+# QuickLook extension for source files incl. JSON (quicklook-json was disabled upstream 2025-12)
+cask "syntax-highlight"
 cask "sublime-text"
 cask "wezterm"
 # Install and switch between multiple versions of Xcode

@@ -9,6 +9,7 @@ if [[ -d "$DOTFILES_DIR/homebrew/Casks" ]]; then
   brew tap | grep -qx "dotfiles/pinned" || brew tap-new --no-git dotfiles/pinned >/dev/null
   mkdir -p "$(brew --repository dotfiles/pinned)/Casks"
   cp "$DOTFILES_DIR"/homebrew/Casks/*.rb "$(brew --repository dotfiles/pinned)/Casks/"
+  brew trust dotfiles/pinned >/dev/null 2>&1 || true
 fi
 
 brew bundle --file="$DOTFILES_DIR/Brewfile"
