@@ -212,6 +212,7 @@
                     },
                     {
                         "description": "keypad_2 to ctrl+shift+left",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_2" },
@@ -227,6 +228,7 @@
                     },
                     {
                         "description": "keypad_3 to ctrl+shift+right",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "keypad_3" },
