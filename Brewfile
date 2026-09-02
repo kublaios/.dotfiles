@@ -1,3 +1,6 @@
+# AeroSpace is only distributed through its author's tap
+tap "nikitabobko/tap"
+
 brew "bat"
 # GNU File, Shell, and Text utilities
 brew "coreutils"
@@ -65,7 +68,7 @@ cask "codex"
 # Keyboard customizer
 cask "karabiner-elements"
 cask "mouseless@preview"
-cask "aerospace"
+cask "nikitabobko/tap/aerospace"
 # Prevents iTunes/Apple Music from auto-launching
 cask "notunes"
 cask "obsidian"

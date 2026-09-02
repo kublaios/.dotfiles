@@ -12,6 +12,15 @@ if [[ -d "$DOTFILES_DIR/homebrew/Casks" ]]; then
   brew trust dotfiles/pinned >/dev/null 2>&1 || true
 fi
 
+# Homebrew 6 refuses untrusted third-party taps; trust every tap the Brewfiles declare.
+trust_taps() {
+  grep -hE '^tap "' "$@" 2>/dev/null | sed -E 's/^tap "([^"]+)".*/\1/' | while read -r tap; do
+    brew tap | grep -qx "$tap" || brew tap "$tap"
+    brew trust "$tap" >/dev/null 2>&1 || true
+  done
+}
+trust_taps "$DOTFILES_DIR/Brewfile" ${PROFILE:+"$DOTFILES_DIR/Brewfile.$PROFILE"}
+
 brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 if [[ -n "$PROFILE" ]]; then
