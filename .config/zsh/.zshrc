@@ -9,8 +9,6 @@ if [[ "$(uname)" == "Darwin" ]]; then
   export HOMEBREW_NO_REQUIRE_TAP_TRUST=1
   export PATH="/opt/homebrew/bin:$PATH"
   export PATH="/opt/homebrew/sbin:$PATH"
-  # Golang environment variables
-  export GOROOT=$(brew --prefix go)/libexec
   # Added by LM Studio CLI (lms)
   export PATH="$PATH:/Users/chainbreaker/.cache/lm-studio/bin"
 fi
@@ -25,9 +23,7 @@ fi
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 
-# Golang environment variables
-export GOPATH=$HOME/go
-export PATH=$GOPATH/bin:$GOROOT/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
 
 # some useful options (man zshoptions)
 setopt autocd extendedglob nomatch menucomplete

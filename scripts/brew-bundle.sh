@@ -4,6 +4,13 @@ set -euo pipefail
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 PROFILE="${1:-${BREWFILE_EXT:-}}"
 
+# Pinned/custom casks live in the repo; mirror them into a local tap so Brewfiles can reference them.
+if [[ -d "$DOTFILES_DIR/homebrew/Casks" ]]; then
+  brew tap | grep -qx "dotfiles/pinned" || brew tap-new --no-git dotfiles/pinned >/dev/null
+  mkdir -p "$(brew --repository dotfiles/pinned)/Casks"
+  cp "$DOTFILES_DIR"/homebrew/Casks/*.rb "$(brew --repository dotfiles/pinned)/Casks/"
+fi
+
 brew bundle --file="$DOTFILES_DIR/Brewfile"
 
 if [[ -n "$PROFILE" ]]; then

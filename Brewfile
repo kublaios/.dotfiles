@@ -41,6 +41,8 @@ brew "mactop"
 brew "neovim"
 brew "node"
 # Cryptography and SSL/TLS Toolkit
+# One-time password generator (vpn helper)
+brew "oath-toolkit"
 brew "openssl@3"
 brew "python"
 # Ruby version manager
