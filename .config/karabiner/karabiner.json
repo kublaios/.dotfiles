@@ -711,10 +711,6 @@
                     "ignore": false,
                     "simple_modifications": [
                         {
-                            "from": { "pointing_button": "button1" },
-                            "to": [{ "pointing_button": "button2" }]
-                        },
-                        {
                             "from": { "pointing_button": "button2" },
                             "to": [{ "pointing_button": "button1" }]
                         }
