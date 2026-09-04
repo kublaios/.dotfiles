@@ -12,6 +12,7 @@ brew "unar"
 # Terminal file manager (Rust, async I/O)
 brew "yazi"
 
+cask "chromium"
 cask "lm-studio"
 # File system integration
 cask "macfuse"
