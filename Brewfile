@@ -40,6 +40,8 @@ brew "libheif"
 brew "mactop"
 brew "neovim"
 brew "node"
+# OATH one-time password tool (`oathtool`) for TOTP generation
+brew "oath-toolkit"
 # Cryptography and SSL/TLS Toolkit
 brew "openssl@3"
 brew "python"
