@@ -49,8 +49,8 @@ brew "python"
 # Ruby version manager
 brew "rbenv"
 brew "ripgrep"
+brew "rtk"
 brew "stow"
-brew "swiftlint"
 brew "telnet"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
