@@ -133,6 +133,7 @@
                     },
                     {
                         "description": "Right Shift to / and Shift",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
