@@ -48,6 +48,8 @@ brew "openssl@3"
 brew "python"
 # Ruby version manager
 brew "rbenv"
+# Touch ID for sudo inside tmux (used by /etc/pam.d/sudo_local)
+brew "pam-reattach"
 brew "ripgrep"
 brew "rtk"
 brew "stow"
